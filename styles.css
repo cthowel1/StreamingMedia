@@ -112,9 +112,6 @@ html {
     margin: 25px 0;
     grid-template-columns: repeat(1fr 1fr 1fr);
 }
-div {
-  grid-area: auto;
-}
 
 figure {
   display: flex;
