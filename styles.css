@@ -6,7 +6,7 @@ License: none (public domain)
 html {
     background-color:#020659;  
   }
-  
+  /*
   body {
     background-color: #2104D9;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -15,6 +15,11 @@ html {
     min-width: 375px;
     max-width:824px;
     display: grid;
+  }*/
+  body {
+    min-width: 375px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #2104D9;
   }
   
   header {
@@ -23,27 +28,29 @@ html {
     background-image: linear-gradient(to right #2104d9 to #020659);
   }
   
-  nav {
-    background-color: #020873;
-    padding: 5px;
-    position: relative;
-    top: 0px;
-  }
-  
   nav a:hover {
   background-color: #590242;
   color:#ffffff;
   }
+
   nav a {
-    color:#ffffff
+    color:#ffffff;
+    background-color: #020873;
+    display: block;
+    padding: 5px;
+    position: relative;
+    top: 0px;
   }
+
   nav li {
     display: inline-block;
+    list-style: none;
+    
   }
   nav h2 {
     visibility: hidden;
   }
-  #logo {
+  img {
     float: right;
   }
   /*
@@ -98,6 +105,7 @@ html {
     background-color: #0D8DFB;
     background-image: #2699fb;
     color:#ffffff;
+    float: left;
   }
 
 /*Curated Playist*/
@@ -105,6 +113,7 @@ html {
     background-color: #2104d9;
     background-image: #030a8c;
     color:#ffffff;
+    float: right;
 }
 
   /*Mobile first-Menu
@@ -177,7 +186,7 @@ html {
       }
   }
   
-  /* Audio */
+  /* Audio 
   audio::-webkit-media-controls-mute-button {
   
   }
@@ -187,6 +196,7 @@ html {
   audio::-webkit-media-controls-enclosure {
   
   }
+  */
   
   
   /* Scrollbar */
@@ -207,16 +217,21 @@ html {
   
   }
   #playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+    width: 15px;
 
   
   }
   #playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+    box-shadow: inset 0 0 15px #590242;
   
   }
   #playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
+    background: #590242;
+    border-radius: 5px;
   
   }
   #playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+    background: #020659;
   
   }
   
