@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /*http://meyerweb.com/eric/tools/css/reset/
 v2.0| 20110126 
 License: none (public domain)
@@ -143,3 +144,175 @@ html {
   
   }
   */
+=======
+/*http://meyerweb.com/eric/tools/css/reset/
+v2.0| 20110126 
+License: none (public domain)
+*/
+/*Large screen*/
+html {
+    background-color:#020659;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  body {
+    background-color: #2104D9;
+    margin: 0 auto;
+    padding: 25px;
+    min-width: 375px;
+    max-width:824px;
+    display: grid;
+    grid-template-areas: 
+    "header  header"
+    "body main"
+    "footer footer"
+
+  }
+  
+  header {
+    grid-area: header;
+  }
+  nav a :hover {
+  background-color: #590242;
+  }
+  /*nav {
+    background-color: gradiate:
+  }*/
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #2104D9;
+    color: #ffffff;
+  }
+  
+  .button {
+    background-color:#590242 ;
+    color:#ffffff;
+  }
+  footer {
+    grid-area: footer;
+    display: block;
+    text-align: center;
+    color: #590242;
+  }
+/*Trending songs */
+
+/*Your Playlist */
+.your {
+    background-color: #0D8DFB;
+    color:#ffffff;
+  }
+
+/*Curated Playist*/
+
+
+  /*Mobile first-Menu
+  Menu Code for Mobile First Style (minus the bits you know how to do): */
+  
+  ul {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height .2s ease-out;
+  }
+  label {
+      cursor: pointer;
+      display: inline-block;
+      padding: 28px 20px;
+      position: relative;
+      user-select: none;
+  }
+  label span {
+      background-color: #ffffff;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background-color .2s ease-out;
+      width: 18px;
+  }
+  label span:before, label span:after {
+      background: #ffffff;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%;
+  }
+  label span:before {
+      top: 5px;
+  }
+  label span:after {
+      top: -5px;
+  }
+  input {
+      display: none;
+  }
+  input:checked ~ ul {
+      max-height: 500px;
+  }
+  input:checked ~ label span {
+      background: transparent;
+  }
+  input:checked ~ label span:before {
+      transform: rotate(-45deg);
+  }
+  input:checked ~ label span:after {
+      transform: rotate(45deg);
+  }
+  input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+      top: 0;
+  }
+  
+  @media screen and (min-width:834px) {
+      ul {
+          overflow: visible;
+          position: absolute;
+          top: 0;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      }
+      label span, input {
+          display: none;
+      }
+  }
+  
+  /* Audio */
+  audio::-webkit-media-controls-mute-button {
+  
+  }
+  audio::-webkit-media-controls-play-button {
+  
+  }
+  audio::-webkit-media-controls-enclosure {
+  
+  }
+  
+  
+  /* Scrollbar */
+  #trending ::-webkit-scrollbar {
+  
+  }
+  #trending ::-webkit-scrollbar-track {
+  
+  }
+  #trending ::-webkit-scrollbar-thumb {
+  
+  }
+  #trending ::-webkit-scrollbar-thumb:hover {
+  
+  }
+  #playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+  
+  }
+  #playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+  
+  }
+  #playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
+  
+  }
+  #playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+  
+  }
+  
+>>>>>>> Stashed changes
