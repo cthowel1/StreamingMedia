@@ -15,11 +15,6 @@ html {
     min-width: 375px;
     max-width:824px;
     display: grid;
-    grid-template-areas: 
-    "header  header"
-    "body main"
-    "footer footer"
-
   }
   
   header {
@@ -48,7 +43,7 @@ html {
   nav h2 {
     visibility: hidden;
   }
-  img {
+  #logo {
     float: right;
   }
   /*
@@ -66,7 +61,7 @@ html {
     color:#ffffff;
     float: right;
   }*/
-  
+
   footer {
     grid-area: footer;
     display: block;
