@@ -99,6 +99,7 @@ html {
 #trending {
     background: #ffffff;
     color: #590242;
+    display: block;
 }
 
 
@@ -108,6 +109,7 @@ html {
     background-image: #2699fb;
     color:#ffffff;
     float: left;
+    display: flexbox;
   }
 
 /*Curated Playist*/
@@ -116,6 +118,7 @@ html {
     background-image: #030a8c;
     color:#ffffff;
     float: right;
+    display: flexbox;
 }
 
   /*Mobile first-Menu
