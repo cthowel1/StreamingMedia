@@ -20,17 +20,21 @@ html {
     min-width: 375px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #2104D9;
+    display: grid;
+    grid-area: auto;
   }
   
   header {
     grid-area: header;
     width: 100%;
-    background-image: linear-gradient(to right #2104d9 to #020659);
+    border-bottom: 2px linear-gradient(to right #2104d9 to #020659);
+
   }
   
-  nav a:hover {
-  background-color: #590242;
-  color:#ffffff;
+ nav li {
+   /* display: inline-block;*/
+    list-style: none;
+    
   }
 
   nav a {
@@ -39,17 +43,20 @@ html {
     display: block;
     padding: 5px;
     position: relative;
-    top: 0px;
+    margin: 5px;
+    padding: 10px;
+  
+  } 
+  nav a:hover {
+  background-color: #590242;
+  color:#ffffff;
   }
 
-  nav li {
-    display: inline-block;
-    list-style: none;
-    
-  }
   nav h2 {
     visibility: hidden;
+    height: 1px;
   }
+
   img {
     float: right;
   }
@@ -79,28 +86,33 @@ html {
     width: 100%;
   }
 
-  /* TEXT - font sizes
+  /* TEXT - 
+  font sizes
   h1 {font-size:1.25em;}
   h2,h3 {font-size: 1em;}
   p,dl,dd {font-size: 1em;}
   footer p {font-size: .75em;}
   
   body
-  h1{
+  footer
+  */
+  h1 {
     font-size: 1.25em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   h2 + h3 { 
     font-size: 1em;}
-  footer
-  */
+  
 
 /*Trending songs */
 #trending {
    /* background: #ffffff;*/
     color: #590242;
     display: block;
+    padding: 5px;
+    margin: 25px 0;
 }
+
 figure {
   display: flex;
 }
@@ -112,6 +124,8 @@ figure {
     color:#ffffff;
     float: left;
     display: flexbox;
+    padding: 5px;
+    margin: 25px 0;
   }
 
 /*Curated Playist*/
@@ -121,11 +135,15 @@ figure {
     color:#ffffff;
     float: right;
     display: flexbox;
+    padding: 5px;
+    margin: 25px 0;
 }
 
   /*Mobile first-Menu
   Menu Code for Mobile First Style (minus the bits you know how to do): */
+ @media screen {min-width: 375px;
   
+ } 
   ul {
       overflow: hidden;
       max-height: 0;
