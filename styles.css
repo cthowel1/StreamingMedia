@@ -19,7 +19,7 @@ html {
   body {
     min-width: 375px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #2104D9;
+    /*background-color: #2104D9;*/
     display: grid;
     grid-area: auto;
   }
@@ -44,7 +44,6 @@ html {
     padding: 5px;
     position: relative;
     margin: 5px;
-    padding: 10px;
   
   } 
   nav a:hover {
@@ -111,6 +110,10 @@ html {
     display: block;
     padding: 5px;
     margin: 25px 0;
+    grid-template-columns: repeat(1fr 1fr 1fr);
+}
+div {
+  grid-area: auto;
 }
 
 figure {
@@ -126,6 +129,7 @@ figure {
     display: flexbox;
     padding: 5px;
     margin: 25px 0;
+    grid-template-columns: repeat(1fr 1fr 1fr);
   }
 
 /*Curated Playist*/
@@ -137,6 +141,7 @@ figure {
     display: flexbox;
     padding: 5px;
     margin: 25px 0;
+    grid-template-columns: repeat(1fr 1fr 1fr);
 }
 
   /*Mobile first-Menu
