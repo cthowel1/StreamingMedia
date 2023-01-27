@@ -62,12 +62,14 @@ html {
     color: #ffffff;
   }*/
   
-  /*
-  input button {
+  
+  .buttonA .buttonB .buttonC {
     background-color:#590242 ;
     color:#ffffff;
     float: right;
-  }*/
+    padding: 5px
+    margin: 0px;
+  }
 
   footer {
     grid-area: footer;
