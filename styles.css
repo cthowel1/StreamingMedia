@@ -97,7 +97,7 @@ html {
 
 /*Trending songs */
 #trending {
-    background: #ffffff;
+   /* background: #ffffff;*/
     color: #590242;
     display: block;
 }
