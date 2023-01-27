@@ -101,7 +101,9 @@ html {
     color: #590242;
     display: block;
 }
-
+figure {
+  display: flex;
+}
 
 /*Your Playlist */
 #your {
