@@ -67,7 +67,7 @@ html {
     background-color:#590242 ;
     color:#ffffff;
     float: right;
-    padding: 5px
+    padding button: 5px
     margin: 0px;
   }
 
@@ -105,8 +105,8 @@ html {
 
 /*Your Playlist */
 #your {
-    background-color: #0D8DFB;
-    background-image: #2699fb;
+    /*background-color: #0D8DFB;
+    background-image: #2699fb;*/
     color:#ffffff;
     float: left;
     display: flexbox;
@@ -114,8 +114,8 @@ html {
 
 /*Curated Playist*/
 #curated {
-    background-color: #2104d9;
-    background-image: #030a8c;
+   /* background-color: #2104d9;
+    background-image: #030a8c;*/
     color:#ffffff;
     float: right;
     display: flexbox;
