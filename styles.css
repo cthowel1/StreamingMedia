@@ -26,7 +26,11 @@ html {
     grid-area: header;
     width: 100%;
     border-bottom: 2px linear-gradient(to right #2104d9 to #020659);
+  
 
+  }
+  header h1 {
+    visibility: hidden;
   }
   
  nav li {
@@ -198,18 +202,6 @@ figure {
       top: 0;
   }
   
-  @media screen and (min-width:834px) {
-      ul {
-          overflow: visible;
-          position: absolute;
-          top: 0;
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      }
-      label span, input {
-          display: none;
-      }
-  }
   
   /* Audio 
   audio::-webkit-media-controls-mute-button {
