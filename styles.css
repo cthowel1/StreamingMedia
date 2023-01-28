@@ -2,6 +2,68 @@
 v2.0| 20110126 
 License: none (public domain)
 */
+/* mobile*/
+/*Mobile first-Menu
+  Menu Code for Mobile First Style (minus the bits you know how to do): */
+  @media screen { min-width: 375;
+
+  } 
+   ul {
+       overflow: hidden;
+       max-height: 0;
+       transition: max-height .2s ease-out;
+   }
+   label {
+       cursor: pointer;
+       display: inline-block;
+       padding: 28px 20px;
+       position: relative;
+       user-select: none;
+   }
+   label span {
+       background-color: #ffffff;
+       display: block;
+       height: 2px;
+       position: relative;
+       transition: background-color .2s ease-out;
+       width: 18px;
+   }
+   label span:before, label span:after {
+       background: #ffffff;
+       content: '';
+       display: block;
+       height: 100%;
+       position: absolute;
+       transition: all .2s ease-out;
+       width: 100%;
+   }
+   label span:before {
+       top: 5px;
+   }
+   label span:after {
+       top: -5px;
+   }
+   input {
+       display: none;
+   }
+   input:checked ~ ul {
+       max-height: 500px;
+   }
+   input:checked ~ label span {
+       background: transparent;
+   }
+   input:checked ~ label span:before {
+       transform: rotate(-45deg);
+   }
+   input:checked ~ label span:after {
+       transform: rotate(45deg);
+   }
+   input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+       top: 0;
+   }
+  
+
+
 /*Large screen*/
 html {
     background-color:#020659;  
@@ -14,6 +76,8 @@ html {
     padding: 25px;
     display: grid;
   }*/
+
+  /*body*/
   body {
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -22,17 +86,21 @@ html {
     grid-area: auto;
   }
   
+  /*header*/
   header {
     grid-area: header;
     width: 100%;
-    border-bottom: 2px linear-gradient(to right #2104d9 to #020659);
-  
+    background-image: linear-gradient(to right, #020873 , #020659);
+  margin: 5px;
+  padding: 5px;
 
   }
+  /*
   header h1 {
     visibility: hidden;
-  }
-  
+  }*/
+
+  /*navigation*/
  nav li {
    /* display: inline-block;*/
     list-style: none;
@@ -70,15 +138,31 @@ html {
     color: #ffffff;
   }*/
   
-  
+  /*buttons*/
   .buttonA .buttonB .buttonC {
     background-color:#590242 ;
     color:#ffffff;
     float: right;
-    padding button: 5px
+    padding: 5px;
     margin: 0px;
   }
 
+/*
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+*/
+/*footer*/
   footer {
     grid-area: footer;
     display: block;
@@ -105,103 +189,44 @@ html {
     font-size: 1em;}
   
 
-/*Trending songs */
+/*Trending playlists */
 #trending {
    /* background: #ffffff;*/
     color: #590242;
     display: block;
     padding: 5px;
     margin: 25px 0;
-    grid-template-columns: repeat(1fr 1fr 1fr);
+    grid-template-columns: (1fr 1fr 1fr 1fr);
 }
 
 figure {
   display: flex;
 }
 
-/*Your Playlist */
+/*Your Playlists */
 #your {
     /*background-color: #0D8DFB;
     background-image: #2699fb;*/
     color:#ffffff;
     float: left;
-    display: flexbox;
+    display: grid;
     padding: 5px;
     margin: 25px 0;
-    grid-template-columns: repeat(1fr 1fr 1fr);
+    grid-template-columns:(1fr 1fr 1fr 1fr);
   }
 
-/*Curated Playist*/
+/*Curated Playists*/
 #curated {
    /* background-color: #2104d9;
     background-image: #030a8c;*/
     color:#ffffff;
     float: right;
-    display: flexbox;
+    display:grid;
     padding: 5px;
     margin: 25px 0;
-    grid-template-columns: repeat(1fr 1fr 1fr);
+    grid-template-columns:(1fr 1fr 1fr 1fr);
 }
-
-  /*Mobile first-Menu
-  Menu Code for Mobile First Style (minus the bits you know how to do): */
- @media screen {min-width: 375px;
-  
- } 
-  ul {
-      overflow: hidden;
-      max-height: 0;
-      transition: max-height .2s ease-out;
-  }
-  label {
-      cursor: pointer;
-      display: inline-block;
-      padding: 28px 20px;
-      position: relative;
-      user-select: none;
-  }
-  label span {
-      background-color: #ffffff;
-      display: block;
-      height: 2px;
-      position: relative;
-      transition: background-color .2s ease-out;
-      width: 18px;
-  }
-  label span:before, label span:after {
-      background: #ffffff;
-      content: '';
-      display: block;
-      height: 100%;
-      position: absolute;
-      transition: all .2s ease-out;
-      width: 100%;
-  }
-  label span:before {
-      top: 5px;
-  }
-  label span:after {
-      top: -5px;
-  }
-  input {
-      display: none;
-  }
-  input:checked ~ ul {
-      max-height: 500px;
-  }
-  input:checked ~ label span {
-      background: transparent;
-  }
-  input:checked ~ label span:before {
-      transform: rotate(-45deg);
-  }
-  input:checked ~ label span:after {
-      transform: rotate(45deg);
-  }
-  input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
-      top: 0;
-  }
-  
+ 
   
   /* Audio 
   audio::-webkit-media-controls-mute-button {
