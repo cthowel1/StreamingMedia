@@ -56,14 +56,14 @@ html {
   .muza {
     float: none;
   }
-  /*
+  
   nav li {
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color: #2104D9;
     color: #ffffff;
-  }*/
+  }
   
   /*buttons*/
   .buttonA .buttonB .buttonC {
@@ -74,21 +74,6 @@ html {
     margin: 0px;
   }
 
-/*
-.styled {
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    background-color: rgba(220, 0, 0, 1);
-    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
-}
-*/
 /*footer*/
   footer {
     grid-area: footer;
@@ -118,7 +103,7 @@ html {
 
 /*Trending playlists */
 #trending {
-   /* background: #ffffff;*/
+   background: #ffffff;
     color: #590242;
     display: block;
     padding: 0px;
@@ -129,16 +114,9 @@ html {
 #trending img {
   float: inline-start;
 }
-.trend{
-  columns: 1;
-}
-
-figure {
-  display: flex;
-}
 
 /*Your Playlists */
-#your {
+#playlists {
     /*background-color: #0D8DFB;
     background-image: #2699fb;*/
     color:#ffffff;
@@ -149,10 +127,14 @@ figure {
     grid-template-columns:(1fr 1fr 1fr 1fr);
   }
 
+  #playlists img {
+    float: left;
+  }
+
 /*Curated Playists*/
 #curated {
-   /* background-color: #2104d9;
-    background-image: #030a8c;*/
+    background-color: #2104d9;
+    background-image: #030a8c;
     color:#ffffff;
     float: right;
     display:grid;
@@ -160,7 +142,9 @@ figure {
     margin: 0px 0;
     grid-template-columns:(1fr 1fr 1fr 1fr);
 }
- 
+ #curated img {
+  float:right;
+ }
   
   /* Audio 
   audio::-webkit-media-controls-mute-button {
