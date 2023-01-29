@@ -9,7 +9,6 @@ html {
 
   /*body*/
   body {
-    background-color: #2104D9;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: grid;
     grid-area: auto;
@@ -34,7 +33,6 @@ html {
   }
 
   nav a {
-    color:#ffffff;
     background-color: #020873;
     display: block;
     padding: 5px 5px 5px 5px;
@@ -126,6 +124,10 @@ html {
     padding: 0px;
     margin: 0px 0;
     grid-template-columns: (1fr 1fr 1fr 1fr);
+}
+
+#trending img {
+  float: inline-start;
 }
 .trend{
   columns: 1;
