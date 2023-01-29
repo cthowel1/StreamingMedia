@@ -14,14 +14,14 @@
 <!--navigation-->
 <nav>  
   <h2>Main Navigation</h2>
-  <input class="checkbox" id="dropdown">
+  <input class="menu" id="dropdown">
   <label for="dropdown"><span></span></label>
    <ul>
-     <li><a href="#Muza">MuzakMaker</a></li>
-     <li><a href="#TS"></a>Trending Songs</li>
-     <li><a href="#YP"></a>Your playlists</li>
-     <li><a href="#CP"></a>Curated Playlists</li>
-     <li><a href="logo"><img src="duke-silver.png" alt="duke silver"></a></li>
+     <li><a href="#muza">MuzakMaker</a></li>
+     <li><a href="#ts"></a>Trending Songs</li>
+     <li><a href="#yp"></a>Your playlists</li>
+     <li><a href="#cp"></a>Curated Playlists</li>
+     <li><a href="#logo"><img src="duke-silver.png" alt="duke silver"></a></li>
   </ul>
 </nav>
 
@@ -38,44 +38,46 @@
     <h2>Trending Songs </h2>
     <div class="scroll">
     </div>
-  </section>
-  <div class="trend">
 
-  <section class="Aloma">
+  <section>
     <div>
     <h3>Aloma</h3>
-   <img src="aloma-cover.png" alt="Aloma"> 
+      <dl>
+      <dt>Artist </dt>
+      <dd>Cali</dd>
+    </dl>
+  <img src="aloma-cover.png" alt="Aloma"> 
  <audio 
          controls 
          src="aloma.mp3">
     <a href="aloma.mp3"> Play audio </a>
     </audio>
-  <dl>
-    <dt>Artist </dt>
-    <dd>Cali</dd>
-  </dl>
 </div>
 </section>
 
-<section class="my road">
+<section>
   <div>
-  <h3>My Road</h3>
+  <h3>My Road</h3> 
+    <dl>
+      <dt>Artist</dt>
+      <dd>Nesterouk</dd>
+    </dl>
    <img src="my-road-cover.png" alt="My Road"> 
   <audio 
          controls 
          src="my-road.mp3">
     <a href="my-road.mp3">Play audio </a>
     </audio>
-  <dl>
-  <dt>Artist</dt>
-  <dd>Nesterouk</dd>
-  </dl>
 </div>
 </section>
 
-<section class="papaya">
+<section>
   <div>
   <h3>Papaya</h3>
+  <dl>
+   <dt>Artist</dt>
+  <dd>Dredstudio</dd>
+  </dl>
   <img src="papaya-cover.png" alt="Papaya">  
     <audio
         controls
@@ -83,18 +85,18 @@
             <a href="papaya.mp3">
                 Play audio
             </a>
-    </audio>
-  <dl>
-   <dt>Artist</dt>
-  <dd>Dredstudio</dd>
-  </dl>
+    </audio> 
 </div>
 </section>
 
-<section class="smoothies">
+<section>
   <div>
   <h3>Smoothies</h3>
-    <img src="smoothies-cover.png" alt="Smoothies"> 
+    <dl>
+      <dt>Artist</dt> 
+      <dd>Black Rhomb</dd>
+    </dl>
+  <img src="smoothies-cover.png" alt="Smoothies"> 
     <audio
         controls
         src="smoothies.mp3">
@@ -102,16 +104,16 @@
                 Play audio
             </a>
     </audio> 
-  <dl>
-    <dt>Artist</dt> 
-    <dd>Black Rhomb</dd>
-  </dl>
 </div>
 </section>
 
-<section class="successful">
+<section>
   <div>
   <h3>Successful Performance</h3>
+    <dl>
+      <dt>Artist</dt> 
+      <dd>Ricky Bombino</dd>
+    </dl>  
   <img src="successful-performance-cover.png" alt="Successful-performance">  
     <audio
         controls
@@ -120,30 +122,25 @@
                 Play audio
             </a>
     </audio>
-  <dl>
-    <dt>Artist</dt> 
-  <dd>Ricky Bombino</dd>
-  </dl> 
 </div>
 </section>
-</div>
+</section>
 <!--button: more trending-->
 <button name="buttonA">More Trending</button>
 
    
   <!--your playlists-->
-  <section id="Playlists">   
+  <section id="playlists">   
     <h2>Your playlists</h2>
     <div class="scroll">
     </div>
-  </section>
   
-  <section class="best">
+  
+  <div>
       <img src="best-of-2020-cover.png" alt="best-of-2020-cover">
         <h3>Best of 2020</h3>
         <p>The music that got you through the lock down.</p>
-  
-  </section>
+  </div>
 
   <div>
     <img src="pumpkin-spice-cover.png" alt="pumpkin-spice-cover">
@@ -174,16 +171,17 @@
   <dd>Background music to keep you going while you study.</dd> 
 </dl>
     </div>
+ </section>
 
 <!--button: all your playlists-->
 <button name="buttonB">All Your Playlists</button>
   
   <!--curated playlist-->
-  <section id="Curated">
+  <section id="curated">
     <h2>Curated Playlists</h2>
     <div class="scroll">
     </div>
-  </section>
+  
 
   <div>
     <img src="boozy-brunch-cover.png" alt="boozy-brunch-cover">
@@ -223,7 +221,8 @@
         <dt>Jazz Saxophone</dt>
         <dd>The greatest collection of your sax favorites. </dd>
       </dl>
-  </div>  
+  </div>
+  </section>  
 
  <!--button: more curated-->
       <button name="buttonC">More Curated</button>

@@ -15,30 +15,28 @@ html {
   }
   
   /*header*/
-  .header {
+  header {
     grid-area: hd;
     width: 100%;
     background-image: linear-gradient(to right, #020873 , #020659);
     padding: 5px 5px 5px 5px;
   }
-  /*
-  header h1 {
-    visibility: hidden;
-  }*/
 
   /*navigation*/
- nav li {
-   display: inline-block;
-    
-  }
-
+/*
   nav a {
     background-color: #020873;
     display: block;
     padding: 5px 5px 5px 5px;
     position: relative;
   
-  } 
+  } */
+   nav li {
+   display: inline-block;
+    background-color: #2104D9;
+    color: #ffffff;
+  }
+
   nav a:hover {
   background-color: #590242;
   color:#ffffff;
@@ -46,32 +44,22 @@ html {
 
   nav h2 {
     visibility: hidden;
-    height: 1px;
   }
 
-  img {
+  logo {
     float: right;
   }
 
-  .muza {
+  muza {
     float: none;
   }
   
-  nav li {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #2104D9;
-    color: #ffffff;
-  }
-  
+ 
   /*buttons*/
   .buttonA .buttonB .buttonC {
     background-color:#590242 ;
     color:#ffffff;
     float: right;
-    padding: 5px;
-    margin: 0px;
   }
 
 /*footer*/
@@ -106,7 +94,7 @@ html {
    background: #ffffff;
     color: #590242;
     display: block;
-    padding: 0px;
+    padding: 10px 10px 10px 10px;
     margin: 0px 0;
     grid-template-columns: (1fr 1fr 1fr 1fr);
 }
@@ -198,7 +186,7 @@ html {
   /* mobile*/
 /*Mobile first-Menu
   Menu Code for Mobile First Style (minus the bits you know how to do): */
-  @media screen { min-width: 375;
+  @media screen { min-width: 375px;
 
   } 
    ul {
@@ -254,5 +242,7 @@ html {
    input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
        top: 0;
    }
-  
+  #dropdown{
+    display: list-item;
+  }
   
