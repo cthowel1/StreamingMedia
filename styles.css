@@ -127,6 +127,9 @@ html {
     margin: 0px 0;
     grid-template-columns: (1fr 1fr 1fr 1fr);
 }
+.trend{
+  columns: 1;
+}
 
 figure {
   display: flex;
