@@ -26,14 +26,14 @@ html {
   }
 
   /*navigation*/
-/*
+
   nav a {
     background-color: #020873;
     display: block;
     padding: 5px 5px 5px 5px;
     position: relative;
   
-  } */
+  } 
    nav li {
     display: inline-block;
     background-color: #2104D9;
@@ -51,7 +51,7 @@ html {
   }
 
   #logo {
-    float: right;
+    float: left;
   }
 
   #muza {
@@ -194,10 +194,7 @@ html {
 /*Mobile first-Menu
   Menu Code for Mobile First Style (minus the bits you know how to do): */
   @media screen and (min-width: 375px){ 
-    nav ul {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      display: grid;
-    }
+
     body {
       margin:0 auto;
     }
