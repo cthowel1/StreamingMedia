@@ -46,17 +46,17 @@ html {
     visibility: hidden;
   }
 
-  logo {
+  #logo {
     float: right;
   }
 
-  muza {
-    float: none;
+  #muza {
+    float: top;
   }
   
  
   /*buttons*/
-  .buttonA .buttonB .buttonC {
+  buttonA, buttonB ,buttonC {
     background-color:#590242 ;
     color:#ffffff;
     float: right;
@@ -94,9 +94,10 @@ html {
    background: #ffffff;
     color: #590242;
     display: block;
+    float: inline-start;
     padding: 10px 10px 10px 10px;
     margin: 0px 0;
-    grid-template-columns: (1fr 1fr 1fr 1fr);
+  
 }
 
 #trending img {
@@ -112,7 +113,6 @@ html {
     display: grid;
     padding: 0px;
     margin: 0px 0;
-    grid-template-columns:(1fr 1fr 1fr 1fr);
   }
 
   #playlists img {
@@ -128,13 +128,12 @@ html {
     display:grid;
     padding: 0px;
     margin: 0px 0;
-    grid-template-columns:(1fr 1fr 1fr 1fr);
 }
  #curated img {
   float:right;
  }
   
-  /* Audio 
+  /*Audio 
   audio::-webkit-media-controls-mute-button {
   
   }
