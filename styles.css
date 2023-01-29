@@ -3,6 +3,11 @@ v2.0| 20110126
 License: none (public domain)
 */
 /*Large screen*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 html {
     background-color:#020659;  
   }
@@ -10,13 +15,14 @@ html {
   /*body*/
   body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: grid;
+    min-width: 375px;
+    margin: 0 auto;
   }
   
   /*header*/
   header {
     background-image: linear-gradient(to right, #020873 , #020659);
-    padding: 5px 5px 5px 5px;
+    padding: 10px 5px 5px 5px;
   }
 
   /*navigation*/
@@ -29,9 +35,10 @@ html {
   
   } */
    nav li {
-   display: inline-block;
+    display: inline-block;
     background-color: #2104D9;
     color: #ffffff;
+    position: fixed;
   }
 
   nav a:hover {
@@ -186,9 +193,15 @@ html {
   /* mobile*/
 /*Mobile first-Menu
   Menu Code for Mobile First Style (minus the bits you know how to do): */
-  @media screen { min-width: 375px;
+  @media screen and (min-width: 375px){ 
+    nav ul {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      display: grid;
+    }
+    body {
+      margin:0 auto;
+    }
 
-  } 
    ul {
        overflow: hidden;
        max-height: 0;
@@ -245,4 +258,5 @@ html {
   #dropdown{
     display: list-item;
   }
+}
   
