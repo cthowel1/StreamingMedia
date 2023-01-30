@@ -3,7 +3,7 @@ v2.0| 20110126
 License: none (public domain)
 */
 /*Large screen*/
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -18,6 +18,7 @@ html {
     min-width: 375px;
     margin: 0 auto;
   }
+  /*done*/
   .smooth {
     background-image: linear-gradient(to right, #020873 , #020659);
     padding: 10px 5px 5px 5px;
@@ -65,14 +66,6 @@ html {
     float: none;
   }
 
-/*footer*/
-  footer {
-    grid-area: footer;
-    display: block;
-    text-align: center;
-    color: #590242;
-    width: 100%;
-  }
 
   /* TEXT - 
   font sizes
@@ -89,8 +82,9 @@ html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   h2 + h3 { 
-    font-size: 1em;}
-  footer
+    font-size: 1em;
+  }
+
 
 /*Trending playlists */
 #trending {
@@ -139,7 +133,15 @@ html {
   float:right;
   
  }
-  
+  /*footer*/
+  footer {
+    grid-area: footer;
+    display: block;
+    text-align: center;
+    color: #590242;
+    width: 100%;
+  }
+
   /*Audio 
   audio::-webkit-media-controls-mute-button {
   
