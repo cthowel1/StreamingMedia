@@ -16,7 +16,7 @@ html {
   /*done*/
   .smooth {
     background-image: linear-gradient(to right, #020873 , #020659);
-    padding: 15px 15px 15px 15px;
+    /*padding: 15px 15px 15px 15px;*/
 
   }
   /*header*/
@@ -29,10 +29,9 @@ html {
   nav a {
     background-color: #020873;
     color: #ffffff;
-    display: block;
+    display: line-block;
     text-align: center;
     position: relative;
-    padding: 5px 5px 5px 5px;
   } 
    
   nav a:hover {
@@ -44,12 +43,12 @@ html {
     visibility: hidden;
   }
 
-  .logo {
+  .user {
     float: left;
 
   }
 
-  .muza {
+  .home {
     float: top;
     position: sticky;
   }
@@ -87,6 +86,10 @@ p + dl + dd {
     margin: 0px 0;
   
 }
+#trending :hover {
+  background-color: #590242;
+
+}
 
 #trending img {
   float: inline-start;
@@ -105,7 +108,10 @@ p + dl + dd {
     padding: 0px;
     margin: 0px 0;
   }
-
+  #playlists :hover {
+    background-color: #590242;
+  }
+  
   #playlists img {
     float: left;
     background-color: #2699fb 15%;
@@ -120,6 +126,10 @@ p + dl + dd {
     flex-wrap: wrap;
     padding: 0px;
     margin: 0px 0;
+}
+
+#curated :hover {
+  background-color: #590242;
 }
  #curated img {
   float: right;
@@ -137,7 +147,7 @@ p + dl + dd {
     width: 100%;
   }
 
-  Audio 
+  /*Audio */
   audio::-webkit-media-controls-mute-button {
     background-color: #ffffff;
   }
@@ -148,7 +158,22 @@ p + dl + dd {
    background-color: #ffffff;
   }
 
-  
+  /*Scroll*/
+  .scroll {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .scroll secton {
+    margin: 10px;
+    position: relative;
+  }
+  .scroll div {
+    position: absolute;
+    top: 251px;
+    background-color: rgba(255, 255, 255, .75);
+  }
   
   /* Scrollbar */
   #trending ::-webkit-scrollbar {
