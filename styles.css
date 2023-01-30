@@ -88,7 +88,6 @@ p + dl + dd {
     color: #590242;
     display: flex;
     flex-wrap: wrap;
-    float: inline-start;
     padding: 10px 10px 10px 10px;
     margin: 0px 0;
   
@@ -97,11 +96,13 @@ p + dl + dd {
 #trending img {
   float: inline-start;
 }
+#trending dl {
+  display: flex;
+}
 
 /*Your Playlists */
 #playlists {
     background-color: #0D8DFB;
-    /*background-image: #2699fb;*/
     color:#ffffff;
     float: left;
     display: flex;
@@ -112,7 +113,7 @@ p + dl + dd {
 
   #playlists img {
     float: left;
-    background-color: #2699fb;
+    background-color: #2699fb 15%;
   }
 
 /*Curated Playists*/
@@ -126,9 +127,10 @@ p + dl + dd {
     margin: 0px 0;
 }
  #curated img {
-  float:right;
-  background-color: #030a8c;
+  float: right;
+  background-color: #030a8c 15%;
   
+
  }
   /*footer*/
   footer {
@@ -192,7 +194,7 @@ p + dl + dd {
   /* mobile*/
 /*Mobile first-Menu
   Menu Code for Mobile First Style (minus the bits you know how to do): */
-  @media screen and (min-width: 375px){ 
+ /* @media screen and (min-width: 375px){ 
 
     body {
       margin:0 auto;
@@ -255,6 +257,6 @@ p + dl + dd {
     display: list-item;
   }
  }
- 
+ */
 
   
