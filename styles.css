@@ -18,17 +18,13 @@ html {
     min-width: 375px;
     margin: 0 auto;
   }
-  smooth {
+  .smooth {
     background-image: linear-gradient(to right, #020873 , #020659);
     padding: 10px 5px 5px 5px;
 
   }
   /*header*/
-  header {
-    background-color: #030a8c;
-    padding: 5px 5px 5px 5px;
-  }
-
+ 
   /*navigation*/
  nav li {
     list-style: none;
