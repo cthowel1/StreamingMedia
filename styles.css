@@ -18,7 +18,7 @@ html {
     min-width: 375px;
     margin: 0 auto;
   }
-  #smooth {
+  .smooth {
     background-image: linear-gradient(to right, #020873 , #020659);
     padding: 10px 5px 5px 5px;
 
@@ -52,11 +52,11 @@ html {
     visibility: hidden;
   }
 
-  #logo {
+  .logo {
     float: left;
   }
 
-  #muza {
+  .muza {
     float: top;
     position: sticky;
   }
