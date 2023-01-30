@@ -72,7 +72,7 @@ html {
 footer + p {
   font-size: .75em;
 }
-p + dl + dd {
+p  {
   font-size: 1em;
 }
 dl {
@@ -81,7 +81,7 @@ dl {
 
 }
 dt {
-  padding-right: .5px;
+  padding-right: 0;
 }
 
 /*Trending playlists */
