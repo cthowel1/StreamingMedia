@@ -94,7 +94,7 @@ html {
 
 /*Trending playlists */
 #trending {
-   background: #ffffff;
+    background-color: #ffffff;
     color: #590242;
     display: flex;
     flex-wrap: wrap;
@@ -110,8 +110,8 @@ html {
 
 /*Your Playlists */
 #playlists {
-    /*background-color: #0D8DFB;
-    background-image: #2699fb;*/
+    background-color: #0D8DFB;
+    /*background-image: #2699fb;*/
     color:#ffffff;
     float: left;
     display: flex;
@@ -127,7 +127,7 @@ html {
 /*Curated Playists*/
 #curated {
     background-color: #2104d9;
-    background-image: #030a8c;
+   /* background-image: #030a8c;*/
     color:#ffffff;
     float: right;
     display:flex;
