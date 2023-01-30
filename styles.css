@@ -26,21 +26,19 @@ html {
   }
 
   /*navigation*/
+ nav li {
+    list-style: none;
+  } 
 
   nav a {
     background-color: #020873;
+    color: #ffffff;
     display: block;
-    padding: 5px 5px 5px 5px;
+    text-align: center;
     position: relative;
   
   } 
-   nav li {
-    display: inline-block;
-    background-color: #2104D9;
-    color: #ffffff;
-    position: fixed;
-  }
-
+   
   nav a:hover {
   background-color: #590242;
   color:#ffffff;
@@ -56,11 +54,12 @@ html {
 
   #muza {
     float: top;
+    position: sticky;
   }
   
  
   /*buttons*/
-  buttonA, buttonB ,buttonC {
+  buttonA, buttonB, buttonC {
     background-color:#590242 ;
     color:#ffffff;
     float: none;
@@ -91,7 +90,7 @@ html {
   }
   h2 + h3 { 
     font-size: 1em;}
-  
+  footer
 
 /*Trending playlists */
 #trending {
