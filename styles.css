@@ -69,8 +69,7 @@ html {
 
   /* TEXT */
   h1 {
-    font-size: 1.25em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   visibility: hidden;
   }
   h2 + h3 { 
     font-size: 1em;
