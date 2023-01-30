@@ -21,7 +21,7 @@ html {
   /*done*/
   .smooth {
     background-image: linear-gradient(to right, #020873 , #020659);
-    padding: 10px 5px 5px 5px;
+    padding: 15px 15px 15px 15px;
 
   }
   /*header*/
@@ -37,7 +37,7 @@ html {
     display: block;
     text-align: center;
     position: relative;
-  
+    padding: 5px 5px 5px 5px;
   } 
    
   nav a:hover {
@@ -51,6 +51,7 @@ html {
 
   .logo {
     float: left;
+
   }
 
   .muza {
@@ -111,12 +112,12 @@ p + dl + dd {
 
   #playlists img {
     float: left;
+    background-color: #2699fb;
   }
 
 /*Curated Playists*/
 #curated {
     background-color: #2104d9;
-   /* background-image: #030a8c;*/
     color:#ffffff;
     float: right;
     display:flex;
@@ -126,6 +127,7 @@ p + dl + dd {
 }
  #curated img {
   float:right;
+  background-color: #030a8c;
   
  }
   /*footer*/
@@ -190,7 +192,7 @@ p + dl + dd {
   /* mobile*/
 /*Mobile first-Menu
   Menu Code for Mobile First Style (minus the bits you know how to do): */
- /* @media screen and (min-width: 375px){ 
+  @media screen and (min-width: 375px){ 
 
     body {
       margin:0 auto;
@@ -253,6 +255,6 @@ p + dl + dd {
     display: list-item;
   }
  }
- */
+ 
 
   
