@@ -3,19 +3,14 @@ v2.0| 20110126
 License: none (public domain)
 */
 /*Large screen*/
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 html {
     background-color:#020659;  
+    box-sizing: border-box;
   }
 
   /*body*/
   body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    min-width: 375px;
     margin: 0 auto;
   }
   /*done*/
@@ -132,7 +127,8 @@ p + dl + dd {
   
 
  }
-  /*footer*/
+ 
+   /*footer*/
   footer {
     grid-area: footer;
     display: block;
@@ -141,18 +137,17 @@ p + dl + dd {
     width: 100%;
   }
 
-  /*Audio 
+  Audio 
   audio::-webkit-media-controls-mute-button {
     background-color: #ffffff;
-  
   }
   audio::-webkit-media-controls-play-button {
-  
+  background-color: #ffffff;
   }
   audio::-webkit-media-controls-enclosure {
    background-color: #ffffff;
   }
-  */
+
   
   
   /* Scrollbar */
