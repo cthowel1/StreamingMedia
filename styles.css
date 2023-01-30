@@ -75,6 +75,14 @@ footer + p {
 p + dl + dd {
   font-size: 1em;
 }
+dl {
+  font-size: 1em;
+  display: flex;
+
+}
+dt {
+  padding-right: .5px;
+}
 
 /*Trending playlists */
 #trending {
@@ -86,17 +94,16 @@ p + dl + dd {
     margin: 0px 0;
   
 }
-#trending :hover {
-  background-color: #590242;
-
-}
 
 #trending img {
   float: inline-start;
+  size-adjust: auto;
+  overflow-y: hidden;
+  overflow-x: auto;
 }
-#trending dl {
+/*#trending dl {
   display: flex;
-}
+}*/
 
 /*Your Playlists */
 #playlists {
@@ -115,6 +122,8 @@ p + dl + dd {
   #playlists img {
     float: left;
     background-color: #2699fb 15%;
+    overflow-y: hidden;
+    overflow-x: auto;
   }
 
 /*Curated Playists*/
@@ -134,6 +143,8 @@ p + dl + dd {
  #curated img {
   float: right;
   background-color: #030a8c 15%;
+  overflow-y: hidden;
+  overflow-x: auto;
   
 
  }
@@ -156,6 +167,11 @@ p + dl + dd {
   }
   audio::-webkit-media-controls-enclosure {
    background-color: #ffffff;
+  }
+  audio {
+  position: absolute;
+  bottom: 150px;
+  left: 5px;
   }
 
   /*Scroll*/
