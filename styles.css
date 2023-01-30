@@ -25,7 +25,8 @@ html {
   }
   /*header*/
   header {
-    
+    background-color: #030a8c;
+    padding: 5px 5px 5px 5px;
   }
 
   /*navigation*/
