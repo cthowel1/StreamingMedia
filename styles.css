@@ -67,16 +67,7 @@ html {
   }
 
 
-  /* TEXT - 
-  font sizes
-  h1 {font-size:1.25em;}
-  h2,h3 {font-size: 1em;}
-  p,dl,dd {font-size: 1em;}
-  footer p {font-size: .75em;}
-  
-  body
-  footer
-  */
+  /* TEXT */
   h1 {
     font-size: 1.25em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -84,7 +75,12 @@ html {
   h2 + h3 { 
     font-size: 1em;
   }
-
+footer + p {
+  font-size: .75em;
+}
+p + dl + dd {
+  font-size: 1em;
+}
 
 /*Trending playlists */
 #trending {
@@ -144,13 +140,14 @@ html {
 
   /*Audio 
   audio::-webkit-media-controls-mute-button {
+    background-color: #ffffff;
   
   }
   audio::-webkit-media-controls-play-button {
   
   }
   audio::-webkit-media-controls-enclosure {
-  
+   background-color: #ffffff;
   }
   */
   
@@ -194,7 +191,7 @@ html {
   /* mobile*/
 /*Mobile first-Menu
   Menu Code for Mobile First Style (minus the bits you know how to do): */
-  @media screen and (min-width: 375px){ 
+ /* @media screen and (min-width: 375px){ 
 
     body {
       margin:0 auto;
@@ -256,5 +253,7 @@ html {
   #dropdown{
     display: list-item;
   }
-}
+ }
+ */
+
   
