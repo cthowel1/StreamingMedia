@@ -23,13 +23,16 @@ html {
   /*navigation*/
  nav li {
     display: inline-block;
-  } 
-
-  nav a {
     color: #ffffff;
     text-align: center;
     position: relative;
   } 
+
+  /*nav a {
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+  } */
    
   nav a:hover {
   background-color: #590242;
@@ -112,7 +115,6 @@ dt {
     color: #590242;
     /*display: flex;
     flex-wrap: wrap;*/
-    padding: 10px 10px 10px 10px;
     margin: 0px 0;
   
 }
@@ -170,8 +172,6 @@ dt {
   background-color: #030a8c 15%;
   overflow-y: hidden;
   overflow-x: auto;
-  
-
  }
  
    /*footer*/
@@ -193,7 +193,7 @@ dt {
   audio::-webkit-media-controls-enclosure {
    background-color: #ffffff;
   }
-  audio {
+  .audio {
   position: absolute;
   bottom: 150px;
   left: 5px;
