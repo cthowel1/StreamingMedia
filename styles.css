@@ -55,13 +55,21 @@ html {
   
  
   /*buttons*/
-  buttonA, buttonB, buttonC {
-    background-color:#590242 ;
-    color:#ffffff;
-    float: none;
-  }
-
-
+.buttona {
+  background-color: #590242;
+  color: #ffffff;
+  float: inline-start;
+}
+.buttonb {
+  background-color: #590242;
+  color: #ffffff;
+  float: inline-start;
+}
+.buttonc {
+  background-color: #590242;
+  color: #ffffff;
+  float: inline-start;
+}
   /* TEXT */
   h1 {
    visibility: hidden;
@@ -189,6 +197,9 @@ dt {
     position: absolute;
     top: 251px;
     background-color: rgba(255, 255, 255, .75);
+    padding: 5px;
+    height: 50px;
+    width: 350px;
   }
   
   /* Scrollbar */
