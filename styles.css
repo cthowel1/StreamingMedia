@@ -5,31 +5,30 @@ License: none (public domain)
 /*Large screen*/
 html {
     background-color:#020659;  
-    box-sizing: border-box;
   }
 
   /*body*/
   body {
+    min-width: 375px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0 auto;
   }
   /*done*/
   .smooth {
     background-image: linear-gradient(to right, #020873 , #020659);
-    /*padding: 15px 15px 15px 15px;*/
+    padding: 15px 15px 15px 15px;
 
   }
   /*header*/
  
   /*navigation*/
  nav li {
-    list-style: none;
+    display: inline-block;
+    background-color: #020659;
   } 
 
   nav a {
     background-color: #020873;
     color: #ffffff;
-    display: line-block;
     text-align: center;
     position: relative;
   } 
@@ -58,16 +57,19 @@ html {
 .buttona {
   background-color: #590242;
   color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   float: inline-start;
 }
 .buttonb {
   background-color: #590242;
   color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   float: inline-start;
 }
 .buttonc {
   background-color: #590242;
   color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   float: inline-start;
 }
   /* TEXT */
@@ -76,20 +78,26 @@ html {
   }
   h2 + h3 { 
     font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 footer + p {
   font-size: .75em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 p  {
   font-size: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 dl {
   font-size: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
+  
 
 }
 dt {
   padding-right: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /*Trending playlists */
@@ -138,6 +146,7 @@ dt {
 #curated {
     background-color: #2104d9;
     color:#ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     float: right;
     display:flex;
     flex-wrap: wrap;
@@ -243,10 +252,14 @@ dt {
   Menu Code for Mobile First Style (minus the bits you know how to do): */
  /* @media screen and (min-width: 375px){ 
 
-    body {
-      margin:0 auto;
+  nav ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    display:grid;
+  }  
+  main {
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
     }
-
    ul {
        overflow: hidden;
        max-height: 0;
