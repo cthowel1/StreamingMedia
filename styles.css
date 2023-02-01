@@ -10,6 +10,7 @@ html {
   /*body*/
   body {
     min-width: 375px;
+    max-width: 875px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   /*done*/
@@ -64,21 +65,21 @@ html {
   background-color: #590242;
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  float: inline-start;
+  float: left;
   padding: 5px 5px 5px 5px;
 }
 .buttonb {
   background-color: #590242;
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  float: inline-start;
+  float: right;
   padding: 5px 5px 5px 5px;
 }
 .buttonc {
   background-color: #590242;
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  float: inline-start;
+  float: left;
   padding: 5px 5px 5px 5px;
 }
   /* TEXT */
@@ -97,18 +98,7 @@ p  {
   font-size: 1em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-dl {
-  font-size: 1em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  display: flex;
-  
 
-}
-dt {
-  padding-right: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  display: inline-block;
-}
 
 /*Trending playlists */
 #trending {
@@ -116,7 +106,13 @@ dt {
     color: #590242;
     /*display: flex;
     flex-wrap: wrap;*/
-    margin: 0px 0;
+    /*margin: 0px 0;*/
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: scroll;
+    float: inline-start;
+    scrollbar-width: normal;
+    scroll-behavior: smooth;
   
 }
 
@@ -129,6 +125,23 @@ dt {
 /*#trending dl {
   display: flex;
 }*/
+dl {
+  font-size: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  
+}
+dt,dd{
+  padding-right: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+}
+.audio {
+  position: absolute;
+  display: flexbox;
+  bottom: 150px;
+  left: 5px;
+  }
 
 /*Your Playlists */
 #playlists {
@@ -140,8 +153,11 @@ dt {
     flex-wrap: wrap;
     padding: 0px;
     margin: 0px 0;
+    overflow: hidden;
+    scrollbar-width: normal;
+    scroll-behavior: smooth;
   }
-  #playlists :hover {
+  #playlists h3:hover {
     background-color: #590242;
   }
   
@@ -161,11 +177,14 @@ dt {
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 0px;
-    margin: 0px 0;
+    /*padding: 0px;
+    margin: 0px 0;*/
+    overflow: hidden;
+    scrollbar-width: normal;
+    scroll-behavior: smooth;
 }
 
-#curated :hover {
+#curated h3:hover {
   background-color: #590242;
 }
  #curated img {
@@ -177,9 +196,9 @@ dt {
  
    /*footer*/
   footer {
-    grid-area: footer;
     display: block;
     text-align: center;
+    text-decoration: none;
     color: #590242;
     width: 100%;
   }
@@ -194,11 +213,7 @@ dt {
   audio::-webkit-media-controls-enclosure {
    background-color: #ffffff;
   }
-  .audio {
-  position: absolute;
-  bottom: 150px;
-  left: 5px;
-  }
+ 
 
   /*Scroll*/
   .scroll {
@@ -207,7 +222,7 @@ dt {
     overflow-x: auto;
     overflow-y: hidden;
   }
-  .scroll secton {
+  .scroll :secton {
     margin: 10px;
     position: relative;
   }
