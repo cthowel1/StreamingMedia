@@ -156,16 +156,21 @@ dt,dd{
     scrollbar-width: normal;
     scroll-behavior: smooth;
   }
-  #playlists h3+img:hover {
+  #playlists h2 {
+    background-color: #0D8DFB;
+  }
+  #playlists :hover {
     background-color: #590242;
   }
   
   #playlists img {
     float: left;
-    background-color: #2699fb 15%;
+    background-color: #2699fb;
+    background-size: cover;
     overflow-y: hidden;
     overflow-x: auto;
   }
+
 
 /*Curated Playists*/
 #curated {
@@ -188,7 +193,8 @@ dt,dd{
 }
  #curated img {
   float: right;
-  background-color: #030a8c 15%;
+  background-color: #030a8c;
+  background-size: cover;
   overflow-y: hidden;
   overflow-x: auto;
  }
