@@ -10,7 +10,6 @@ html {
   /*body*/
   body {
     min-width: 375px;
-    max-width: 875px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   /*done*/
@@ -157,7 +156,7 @@ dt,dd{
     scrollbar-width: normal;
     scroll-behavior: smooth;
   }
-  #playlists h3:hover {
+  #playlists h3,img:hover {
     background-color: #590242;
   }
   
@@ -184,7 +183,7 @@ dt,dd{
     scroll-behavior: smooth;
 }
 
-#curated h3:hover {
+#curated h3,img:hover {
   background-color: #590242;
 }
  #curated img {
