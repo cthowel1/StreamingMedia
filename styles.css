@@ -15,7 +15,7 @@ html {
   /*done*/
   .smooth {
     background-image: linear-gradient(to right, #020873 , #020659);
-    padding: 15px 15px 15px 15px;
+    padding: 20px 20px 15px 15px;
 
   }
   /*header*/
@@ -65,21 +65,21 @@ html {
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   float: inline-start;
-  padding: 5px 5px;
+  padding: 5px 5px 5px 5px;
 }
 .buttonb {
   background-color: #590242;
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   float: inline-start;
-  padding: 5px 5px;
+  padding: 5px 5px 5px 5px;
 }
 .buttonc {
   background-color: #590242;
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   float: inline-start;
-  padding: 5px 5px;
+  padding: 5px 5px 5px 5px;
 }
   /* TEXT */
   h1 {
@@ -107,6 +107,7 @@ dl {
 dt {
   padding-right: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: inline-block;
 }
 
 /*Trending playlists */
