@@ -156,7 +156,7 @@ dt,dd{
     scrollbar-width: normal;
     scroll-behavior: smooth;
   }
-  #playlists h3,img:hover {
+  #playlists h3+img:hover {
     background-color: #590242;
   }
   
@@ -183,7 +183,7 @@ dt,dd{
     scroll-behavior: smooth;
 }
 
-#curated h3,img:hover {
+#curated h3+img:hover {
   background-color: #590242;
 }
  #curated img {
