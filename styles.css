@@ -19,10 +19,14 @@ html {
   .smooth {
     background-image: linear-gradient(to right, #020873 , #020659);
     padding: 20px 20px 15px 15px;
-    width: 100%;
+   height: auto;
+   width: auto;
 
   }
   /*header*/
+  header {
+    margin:auto;
+  }
  
   /*navigation*/
   nav {
@@ -32,7 +36,7 @@ html {
     position: absolute;
     margin: 0px;
     padding: 0px;
-    width: 100%;
+
   } 
   nav h2 {
     visibility: hidden;
@@ -45,11 +49,6 @@ html {
   background-color: #590242;
   color:#ffffff;
   }
- /* nav a {
-    display:block;
-  }*/
-
- 
 
   .user {
     float: left;
@@ -61,114 +60,58 @@ html {
     position: fixed;
     clear: left;
   }
-  /*wrap
-  .wrapper {
-    width: 100%;
-    max-width: 375px;
-    margin:auto;
-  }*/
- 
-  /*buttons*/
-.buttona {
-  background-color: #590242;
-  color: #ffffff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /*font: 1em;
-  float: none;*/
-  position: relative;
- /* border-radius: 5px;*/
-}
-.buttona :hover {
-  background-color: #020659;
-}
-.buttonb {
-  background-color: #590242;
-  color: #ffffff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /*font: 1em;
-  float: none;*/
-  position: relative;
- /*border-radius: 5px;*/
 
-}
-.buttonb :hover {
-  background-color: #020659;
-}
-.buttonc {
-  background-color: #590242;
-  color: #ffffff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
- /* font: 1em;
-  float: none;*/
-  position: relative;
-/* border-radius: 5px;*/
-}
-.buttonc :hover {
-  background-color: #020659;
-}
-  /* TEXT */
-  h1 {
-   visibility: hidden;
-  }
-  h2 + h3 { 
-    font-size: 1em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  /*
-footer + p {
-  font-size: .75em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}*/
-p  {
-  font-size: 1em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
+   /*buttons*/
 
 /*Trending playlists */
 #trending {
     background-color: #ffffff;
     color: #590242;
-    /*display: flex;
-    flex-wrap: wrap;*/
-    /*margin: 0px 0;*/
-    overflow: hidden;
-    overflow-y: auto;
-    overflow-x: scroll;
-    float: inline-start;
-    scrollbar-width: normal;
-    scroll-behavior: smooth;
-  
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 0;
+    flex-direction: row;
+    overflow-x: hidden;
+    overflow: scroll;
+    float: inline-start; 
 }
 
 #trending img {
   float:inline-start;
-  /*size-adjust: auto;
+  size-adjust: auto;
   overflow-y: hidden;
-  overflow-x: auto;*/
-}
-/*#trending dl {
+  overflow: scroll;
   display: flex;
-}*/
+  flex-direction: row;
+}
+#trending dl {
+  display: flex;
+  font-size: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: row;
+  color: #590242;
+}
+/*
 dl {
   font-size: 1em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   color: #590242;
   
-}
-dt,dd{
+}*/
+#trending dt,dd{
   padding-right: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
+  flex-direction: row;
 }
 .audio {
   position: absolute;
   bottom: 150px;
   left: 5px;
-  /*display: flexbox;*/
- /* border-radius: 10%;*/
-  /*rgba {transition-property: background-color: ;}*/
+  display: flexbox;
+ border-radius: 10%;
   }
 
 /*Your Playlists */
@@ -179,32 +122,24 @@ dt,dd{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-
-
-    /*padding: 0px;
-    margin: 0px 0;
-    overflow: hidden;
-    scrollbar-width: normal;
-    scroll-behavior: smooth;*/
+    overflow: scroll;
+    overflow-y: hidden;
+    padding: 0px;
+    margin: 0px 0px;
   }
-
-/*
-  #playlists :hover {
-    background-color: #590242;
-  }*/
   
   #playlists img {
     float: left;
-   /* background-color: #0D8DFB;*/
-    z-index: 1;
-    background-size: cover;
-    -ms-grid-row-span: inherit;
-   /* overflow-y: hidden;*/
-    overflow-x: auto;
+    display: flex;
+   flex-direction:column;
+   overflow-y: hidden;
+    overflow: scroll;
+    
   }
   
-#playlists div {
+#playlists.div.img {
 background-color: #0D8DFB;
+z-index: 1;
 }
 
 /*Curated Playists*/
@@ -216,29 +151,24 @@ background-color: #0D8DFB;
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /*padding: 0px;
+    padding: 0px;
     margin: 0px 0;
-    overflow: hidden;
-    scrollbar-width: normal;
-    scroll-behavior: smooth;*/
+    overflow: scroll;
+    overflow-y: hidden;
 }
 
-/*
-#curated:hover {
-  background-color: #590242;
-}*/
 
  #curated img {
   float: left;
- /* background-color: #030a8c;*/
-  z-index: 1;
-  -ms-grid-row-span: inherit;
-  /*overflow-y: hidden;*/
-  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  overflow: scroll;
  }
  
- #curated div {
+  #curated.div.img {
   background-color: #030a8c;
+  z-index: 1;
   }
    /*footer*/
   footer {
@@ -286,36 +216,36 @@ background-color: #0D8DFB;
     width: 350px;
   }
   
-  .scroll1 {
+  #playlists.scroll1 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     /*overflow:scroll;*/
     overflow-x: auto;
     overflow-y: hidden;
   }
-  .scroll1 :secton {
+  #playlists.scroll1 :secton {
     margin: 10px;
     position: relative;
   }
-  .scroll1 div {
+  #playlists.scroll1 div {
     position: absolute;
     top: 251px;
     padding: 5px;
     height: 50px;
     width: 350px;
   }
-  .scroll2 {
+  #curated.scroll2 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     /*overflow:scroll;*/
     overflow-x: auto;
     overflow-y: hidden;
   }
-  .scroll2 :secton {
+  #curated.scroll2 :secton {
     margin: 10px;
     position: relative;
   }
-  .scrollbar2 div {
+  #curated.scrollbar2 div {
     position: absolute;
     top: 251px;
     padding: 5px;
@@ -361,7 +291,7 @@ background-color: #0D8DFB;
   /* mobile*/
 /*Mobile first-Menu
   Menu Code for Mobile First Style (minus the bits you know how to do): */
-  @media screen and (min-width: 375px){ 
+  @media screen and (min-width: 375px) { 
 
   nav ul {
     grid-template-columns: 1fr 1fr 1fr;
@@ -428,6 +358,104 @@ background-color: #0D8DFB;
   #dropdown{
     display: list-item;
   }
+  
+/*Trending playlists */
+#trending {
+  background-color: #ffffff;
+  color: #590242;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0px 0;
+  overflow: scroll;
+  overflow-x: auto;
+  float: inline-start;
+}
+
+#trending img {
+float:inline-start;
+size-adjust: auto;
+flex-direction: row;
+overflow: scroll;
+overflow-x: auto;
+}
+#trending dl {
+display: flex;
+font-size: 1em;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: #590242;
+}
+/*
+dl {
+font-size: 1em;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+display: flex;
+color: #590242;
+
+}*/
+#trending dt,dd{
+padding-right: 0;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+display: flex;
+}
+.audio {
+position: absolute;
+bottom: 150px;
+left: 5px;
+display: flex;
+border-radius: 10%;
+}
+
+/*Your Playlists */
+#playlists {
+  background-color: #2699fb;
+  color:#ffffff;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: scroll;
+  padding: 0px;
+  margin: 0px 0;
+
+}
+
+#playlists img {
+  float: left;
+  background-size: cover;
+ overflow: scroll;
+  overflow-x: auto;
+}
+
+#playlists.div.img {
+background-color: #0D8DFB;
+z-index: 1;
+}
+
+/*Curated Playists*/
+#curated {
+  background-color: #2104d9;
+  color:#ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  float: right;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 0px 0;
+  overflow: scroll;
+}
+
+#curated img {
+float: left;
+overflow-x: auto;
+overflow: scroll;
+}
+
+#curated.div.img {
+background-color: #030a8c;
+z-index: 1;
+}
  }
 
   
