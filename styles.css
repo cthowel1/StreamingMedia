@@ -32,7 +32,7 @@ html {
     color: #ffffff;
     text-align: center;
     position: relative;
-    margin: 0 10px;
+    margin: 0px;
   } 
    
   nav a:hover {
@@ -67,7 +67,7 @@ html {
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   float: left;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   padding: 5px 5px 5px 5px;
 }
 .buttona :hover {
@@ -78,7 +78,7 @@ html {
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   float: right;
-  border-radius: 5px;
+ /* border-radius: 5px;*/
   padding: 5px 5px 5px 5px;
 }
 .buttonb :hover {
@@ -89,7 +89,7 @@ html {
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   float: left;
-  border-radius: 5px;
+ /* border-radius: 5px;*/
   padding: 5px 5px 5px 5px;
 }
 .buttonc :hover {
@@ -130,7 +130,7 @@ p  {
 }
 
 #trending img {
-  float:none;
+  float:inline-start;
   /*size-adjust: auto;
   overflow-y: hidden;
   overflow-x: auto;*/
@@ -142,6 +142,7 @@ dl {
   font-size: 1em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
+  color: #590242;
   
 }
 dt,dd{
@@ -151,7 +152,7 @@ dt,dd{
 }
 .audio {
   position: absolute;
-  display: flexbox;
+  /*display: flexbox;*/
   bottom: 150px;
   left: 5px;
   border-radius: 10%;
@@ -180,17 +181,17 @@ dt,dd{
   
   #playlists img {
     float: left;
-    background-color: #0D8DFB;
+   /* background-color: #0D8DFB;*/
     z-index: 1;
     background-size: cover;
     -ms-grid-row-span: inherit;
     overflow-y: hidden;
     overflow-x: auto;
   }
-  /*
+  
 #playlists div {
 background-color: #0D8DFB;
-} */
+}
 
 /*Curated Playists*/
 #curated {
@@ -215,24 +216,22 @@ background-color: #0D8DFB;
 
  #curated img {
   float: left;
-  background-color: #030a8c;
+ /* background-color: #030a8c;*/
   z-index: 1;
   -ms-grid-row-span: inherit;
   overflow-y: hidden;
   overflow-x: auto;
  }
  
- /*#curated div {
+ #curated div {
   background-color: #030a8c;
-  }*/
+  }
    /*footer*/
   footer {
-    display: block;
     text-align: center;
-    position: fixed;
-    bottom: 0px;
+    position: relative;
+    clear: both;
     color: #590242;
-    width: 100%;
   }
 
   /*Audio */
@@ -254,14 +253,47 @@ background-color: #0D8DFB;
     overflow-x: auto;
     overflow-y: hidden;
   }
-  .scroll :secton {
+  .scroll secton {
     margin: 10px;
     position: relative;
   }
   .scroll div {
     position: absolute;
     top: 251px;
-    background-color: rgba(255, 255, 255, .75);
+    padding: 5px;
+    height: 50px;
+    width: 350px;
+  }
+  .scrolla {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .scrolla :secton {
+    margin: 10px;
+    position: relative;
+  }
+  .scrolla div {
+    position: absolute;
+    top: 251px;
+    padding: 5px;
+    height: 50px;
+    width: 350px;
+  }
+  .scrollb {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .scrollb :secton {
+    margin: 10px;
+    position: relative;
+  }
+  .scrollb div {
+    position: absolute;
+    top: 251px;
     padding: 5px;
     height: 50px;
     width: 350px;
