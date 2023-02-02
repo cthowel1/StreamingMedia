@@ -25,19 +25,22 @@ html {
   /*header*/
  
   /*navigation*/
- nav li {
-    display:inline;
-  } 
-
   nav {
     background-color: #030a8c;
     color: #ffffff;
     text-align: center;
-    position: relative;
-    /*margin: 0px;*/
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
     width: 100%;
   } 
-   
+  nav h2 {
+    visibility: hidden;
+  }
+  nav li {
+    display:inline;
+  } 
+
   nav :hover {
   background-color: #590242;
   color:#ffffff;
@@ -46,9 +49,7 @@ html {
     display:block;
   }*/
 
-  nav h2 {
-    visibility: hidden;
-  }
+ 
 
   .user {
     float: left;
@@ -238,7 +239,7 @@ background-color: #0D8DFB;
  
  #curated div {
   background-color: #030a8c;
-  m
+
   }
    /*footer*/
   footer {
