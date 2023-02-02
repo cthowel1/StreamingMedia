@@ -155,7 +155,7 @@ dt,dd{
 
 /*Your Playlists */
 #playlists {
-    background-color: #0D8DFB;
+    background-color: #2699fb;
     color:#ffffff;
     float: left;
     display: flex;
@@ -167,9 +167,6 @@ dt,dd{
     scrollbar-width: normal;
     scroll-behavior: smooth;
   }
-  #playlists h2 {
-    background-color: #0D8DFB;
-  }
 
 /*
   #playlists :hover {
@@ -178,8 +175,9 @@ dt,dd{
   
   #playlists img {
     float: left;
-    background-color: #2699fb;
+    background-color: #0D8DFB;
     background-size: cover;
+    -ms-grid-row-span: inherit;
     overflow-y: hidden;
     overflow-x: auto;
   }
@@ -207,8 +205,9 @@ dt,dd{
 }*/
 
  #curated img {
-  float: right;
-  background-color: #030a8c;
+  float: left;
+  background-color: transparent #030a8c;
+  -ms-grid-row-span: inherit;
   overflow-y: hidden;
   overflow-x: auto;
  }
