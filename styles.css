@@ -188,13 +188,12 @@ dt,dd{
     scroll-behavior: smooth;
 }
 
-#curated h3+img:hover {
+#curated:hover {
   background-color: #590242;
 }
  #curated img {
   float: right;
   background-color: #030a8c;
-  background-size: cover;
   overflow-y: hidden;
   overflow-x: auto;
  }
