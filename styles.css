@@ -67,6 +67,9 @@ html {
   float: left;
   padding: 5px 5px 5px 5px;
 }
+.buttona :hover {
+  background-color: #020659;
+}
 .buttonb {
   background-color: #590242;
   color: #ffffff;
@@ -74,12 +77,18 @@ html {
   float: right;
   padding: 5px 5px 5px 5px;
 }
+.buttonb :hover {
+  background-color: #020659;
+}
 .buttonc {
   background-color: #590242;
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   float: left;
   padding: 5px 5px 5px 5px;
+}
+.buttonc :hover {
+  background-color: #020659;
 }
   /* TEXT */
   h1 {
@@ -140,6 +149,8 @@ dt,dd{
   display: flexbox;
   bottom: 150px;
   left: 5px;
+  border-radius: 10%;
+  /*rgba {transition-property: background-color: ;}*/
   }
 
 /*Your Playlists */
@@ -159,9 +170,11 @@ dt,dd{
   #playlists h2 {
     background-color: #0D8DFB;
   }
+
+/*
   #playlists :hover {
     background-color: #590242;
-  }
+  }*/
   
   #playlists img {
     float: left;
@@ -188,9 +201,11 @@ dt,dd{
     scroll-behavior: smooth;
 }
 
+/*
 #curated:hover {
   background-color: #590242;
-}
+}*/
+
  #curated img {
   float: right;
   background-color: #030a8c;
