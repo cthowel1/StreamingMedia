@@ -19,6 +19,7 @@ html {
   .smooth {
     background-image: linear-gradient(to right, #020873 , #020659);
     padding: 20px 20px 15px 15px;
+    width: 100%;
 
   }
   /*header*/
@@ -34,16 +35,16 @@ html {
     text-align: center;
     position: relative;
     /*margin: 0px;*/
-    width: 375px;
+    width: 100%;
   } 
    
   nav :hover {
   background-color: #590242;
   color:#ffffff;
   }
-  nav a {
+ /* nav a {
     display:block;
-  }
+  }*/
 
   nav h2 {
     visibility: hidden;
@@ -74,7 +75,7 @@ html {
   font: 1em;
   float: none;
   position: relative;
-  border-radius: 5px;
+ /* border-radius: 5px;*/
 }
 .buttona :hover {
   background-color: #020659;
@@ -86,7 +87,7 @@ html {
   font: 1em;
   float: none;
   position: relative;
- border-radius: 5px;
+ /*border-radius: 5px;*/
 
 }
 .buttonb :hover {
@@ -99,7 +100,7 @@ html {
   font: 1em;
   float: none;
   position: relative;
- border-radius: 5px;
+/* border-radius: 5px;*/
 }
 .buttonc :hover {
   background-color: #020659;
@@ -177,7 +178,7 @@ dt,dd{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    
+
 
     /*padding: 0px;
     margin: 0px 0;
@@ -237,6 +238,7 @@ background-color: #0D8DFB;
  
  #curated div {
   background-color: #030a8c;
+  m
   }
    /*footer*/
   footer {
@@ -267,6 +269,7 @@ background-color: #0D8DFB;
   .scroll {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    /*overflow: scroll;*/
     overflow-x: auto;
     overflow-y: hidden;
   }
@@ -282,31 +285,33 @@ background-color: #0D8DFB;
     height: 50px;
     width: 350px;
   }
-  /*
-  .scrolla {
+  
+  .scroll1 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    /*overflow:scroll;*/
     overflow-x: auto;
     overflow-y: hidden;
   }
-  .scrolla :secton {
+  .scroll1 :secton {
     margin: 10px;
     position: relative;
   }
-  .scrolla div {
+  .scroll1 div {
     position: absolute;
     top: 251px;
     padding: 5px;
     height: 50px;
     width: 350px;
   }
-  .scrollb {
+  .scroll2 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    /*overflow:scroll;*/
     overflow-x: auto;
     overflow-y: hidden;
   }
-  .scrollb :secton {
+  .scroll2 :secton {
     margin: 10px;
     position: relative;
   }
@@ -316,7 +321,7 @@ background-color: #0D8DFB;
     padding: 5px;
     height: 50px;
     width: 350px;
-  }*/
+  }
   
   /* Scrollbar */
   #trending ::-webkit-scrollbar {
