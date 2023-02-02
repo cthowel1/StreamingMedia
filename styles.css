@@ -13,7 +13,7 @@ html {
     background-color: #ffffff;
     margin: 0 auto;
     min-width: 375px;
-    max-width: 800px;
+   /* max-width: 800px;*/
   }
   /*done*/
   .smooth {
@@ -28,16 +28,21 @@ html {
     display:inline;
   } 
 
-  nav a {
+  nav {
+    background-color: #030a8c;
     color: #ffffff;
     text-align: center;
     position: relative;
-    margin: 0px;
+    /*margin: 0px;*/
+    width: 375px;
   } 
    
-  nav a:hover {
+  nav :hover {
   background-color: #590242;
   color:#ffffff;
+  }
+  nav a {
+    display:block;
   }
 
   nav h2 {
@@ -66,9 +71,10 @@ html {
   background-color: #590242;
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  float: left;
-  /*border-radius: 5px;*/
-  padding: 5px 5px 5px 5px;
+  font: 1em;
+  float: none;
+  position: relative;
+  border-radius: 5px;
 }
 .buttona :hover {
   background-color: #020659;
@@ -77,9 +83,11 @@ html {
   background-color: #590242;
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  float: right;
- /* border-radius: 5px;*/
-  padding: 5px 5px 5px 5px;
+  font: 1em;
+  float: none;
+  position: relative;
+ border-radius: 5px;
+
 }
 .buttonb :hover {
   background-color: #020659;
@@ -88,9 +96,10 @@ html {
   background-color: #590242;
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  float: left;
- /* border-radius: 5px;*/
-  padding: 5px 5px 5px 5px;
+  font: 1em;
+  float: none;
+  position: relative;
+ border-radius: 5px;
 }
 .buttonc :hover {
   background-color: #020659;
@@ -103,10 +112,11 @@ html {
     font-size: 1em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+  /*
 footer + p {
   font-size: .75em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+}*/
 p  {
   font-size: 1em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -152,10 +162,10 @@ dt,dd{
 }
 .audio {
   position: absolute;
-  /*display: flexbox;*/
   bottom: 150px;
   left: 5px;
-  border-radius: 10%;
+  /*display: flexbox;*/
+ /* border-radius: 10%;*/
   /*rgba {transition-property: background-color: ;}*/
   }
 
@@ -167,11 +177,13 @@ dt,dd{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 0px;
+    
+
+    /*padding: 0px;
     margin: 0px 0;
     overflow: hidden;
     scrollbar-width: normal;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;*/
   }
 
 /*
@@ -185,7 +197,7 @@ dt,dd{
     z-index: 1;
     background-size: cover;
     -ms-grid-row-span: inherit;
-    overflow-y: hidden;
+   /* overflow-y: hidden;*/
     overflow-x: auto;
   }
   
@@ -203,10 +215,10 @@ background-color: #0D8DFB;
     flex-direction: column;
     flex-wrap: wrap;
     /*padding: 0px;
-    margin: 0px 0;*/
+    margin: 0px 0;
     overflow: hidden;
     scrollbar-width: normal;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;*/
 }
 
 /*
@@ -219,7 +231,7 @@ background-color: #0D8DFB;
  /* background-color: #030a8c;*/
   z-index: 1;
   -ms-grid-row-span: inherit;
-  overflow-y: hidden;
+  /*overflow-y: hidden;*/
   overflow-x: auto;
  }
  
@@ -232,17 +244,22 @@ background-color: #0D8DFB;
     position: relative;
     clear: both;
     color: #590242;
+    font-size: .75em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
   }
 
   /*Audio */
   audio::-webkit-media-controls-mute-button {
     background-color: #ffffff;
+    border-radius: 50%;
   }
   audio::-webkit-media-controls-play-button {
   background-color: #ffffff;
+  border-radius: 50%;
   }
   audio::-webkit-media-controls-enclosure {
-   background-color: #ffffff;
+   background-color: rgba(252, 245, 245, 0.5);
   }
  
 
@@ -253,17 +270,19 @@ background-color: #0D8DFB;
     overflow-x: auto;
     overflow-y: hidden;
   }
-  .scroll secton {
+  .scroll section {
     margin: 10px;
     position: relative;
   }
   .scroll div {
     position: absolute;
     top: 251px;
+    background-color:#ebe3e3;
     padding: 5px;
     height: 50px;
     width: 350px;
   }
+  /*
   .scrolla {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -291,13 +310,13 @@ background-color: #0D8DFB;
     margin: 10px;
     position: relative;
   }
-  .scrollb div {
+  .scrollbar2 div {
     position: absolute;
     top: 251px;
     padding: 5px;
     height: 50px;
     width: 350px;
-  }
+  }*/
   
   /* Scrollbar */
   #trending ::-webkit-scrollbar {
@@ -342,6 +361,7 @@ background-color: #0D8DFB;
   nav ul {
     grid-template-columns: 1fr 1fr 1fr;
     display:grid;
+    overflow: hidden;
   }  
   main {
       display: grid;
