@@ -9,8 +9,11 @@ html {
 
   /*body*/
   body {
-    min-width: 375px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffffff;
+    margin: 0 auto;
+    min-width: 375px;
+    max-width: 800px;
   }
   /*done*/
   .smooth {
@@ -22,17 +25,15 @@ html {
  
   /*navigation*/
  nav li {
-    display: inline-block;
-    color: #ffffff;
-    text-align: center;
-    position: relative;
+    display:inline;
   } 
 
-  /*nav a {
+  nav a {
     color: #ffffff;
     text-align: center;
     position: relative;
-  } */
+    margin: 0 10px;
+  } 
    
   nav a:hover {
   background-color: #590242;
@@ -50,7 +51,8 @@ html {
 
   .home {
     float: top;
-    position: sticky;
+    position: fixed;
+    clear: left;
   }
   /*wrap
   .wrapper {
@@ -65,6 +67,7 @@ html {
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   float: left;
+  border-radius: 5px;
   padding: 5px 5px 5px 5px;
 }
 .buttona :hover {
@@ -75,6 +78,7 @@ html {
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   float: right;
+  border-radius: 5px;
   padding: 5px 5px 5px 5px;
 }
 .buttonb :hover {
@@ -85,6 +89,7 @@ html {
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   float: left;
+  border-radius: 5px;
   padding: 5px 5px 5px 5px;
 }
 .buttonc :hover {
@@ -125,10 +130,10 @@ p  {
 }
 
 #trending img {
-  float: inline-start;
-  size-adjust: auto;
+  float:none;
+  /*size-adjust: auto;
   overflow-y: hidden;
-  overflow-x: auto;
+  overflow-x: auto;*/
 }
 /*#trending dl {
   display: flex;
@@ -176,12 +181,16 @@ dt,dd{
   #playlists img {
     float: left;
     background-color: #0D8DFB;
+    z-index: 1;
     background-size: cover;
     -ms-grid-row-span: inherit;
     overflow-y: hidden;
     overflow-x: auto;
   }
-
+  /*
+#playlists div {
+background-color: #0D8DFB;
+} */
 
 /*Curated Playists*/
 #curated {
@@ -206,17 +215,22 @@ dt,dd{
 
  #curated img {
   float: left;
-  background-color: transparent #030a8c;
+  background-color: #030a8c;
+  z-index: 1;
   -ms-grid-row-span: inherit;
   overflow-y: hidden;
   overflow-x: auto;
  }
  
+ /*#curated div {
+  background-color: #030a8c;
+  }*/
    /*footer*/
   footer {
     display: block;
     text-align: center;
-    text-decoration: none;
+    position: fixed;
+    bottom: 0px;
     color: #590242;
     width: 100%;
   }
@@ -273,7 +287,6 @@ dt,dd{
   #playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
     width: 15px;
 
-  
   }
   #playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
     box-shadow: inset 0 0 15px #590242;
@@ -292,7 +305,7 @@ dt,dd{
   /* mobile*/
 /*Mobile first-Menu
   Menu Code for Mobile First Style (minus the bits you know how to do): */
- /* @media screen and (min-width: 375px){ 
+  @media screen and (min-width: 375px){ 
 
   nav ul {
     grid-template-columns: 1fr 1fr 1fr;
@@ -359,6 +372,5 @@ dt,dd{
     display: list-item;
   }
  }
- */
 
   
