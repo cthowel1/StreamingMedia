@@ -123,8 +123,8 @@ dt,dd{
     float: left;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
-    overflow-y: hidden;
+   /* overflow: scroll;
+    overflow-y: hidden;*/
     /*grid-template-columns: auto;*/
   }
   playlists h2 {
@@ -151,8 +151,8 @@ dt,dd{
     float: left;
     display:flex;
     flex-direction: column;
-    overflow: scroll;
-    overflow-y: hidden;
+   /* overflow: scroll;
+    overflow-y: hidden;*/
     /*grid-template-columns: auto;*/
 }
 curated h2 {
