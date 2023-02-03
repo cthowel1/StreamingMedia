@@ -294,7 +294,7 @@ z-index: 1;
   /* mobile*/
 /*Mobile first-Menu
   Menu Code for Mobile First Style (minus the bits you know how to do): */
-  @media screen and (min-width: 375px) { 
+ /* @media screen and (min-width: 375px) { 
 
   nav ul {
     grid-template-columns: 1fr 1fr 1fr;
@@ -363,7 +363,7 @@ z-index: 1;
   }
   
 /*Trending playlists */
-#trending {
+/*#trending {
   background-color: #ffffff;
   color: #590242;
   display: flex;
@@ -396,7 +396,7 @@ display: flex;
 color: #590242;
 
 }*/
-#trending dt,dd{
+/*dt,dd{
 padding-right: 0;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 display: flex;
@@ -410,7 +410,7 @@ border-radius: 10%;
 }
 
 /*Your Playlists */
-#playlists {
+/*#playlists {
   background-color: #2699fb;
   color:#ffffff;
   float: left;
@@ -436,7 +436,7 @@ z-index: 1;
 }
 
 /*Curated Playists*/
-#curated {
+/*#curated {
   background-color: #2104d9;
   color:#ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -460,5 +460,5 @@ background-color: #030a8c;
 z-index: 1;
 }
  }
-
+*/
   
