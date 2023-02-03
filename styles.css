@@ -45,7 +45,7 @@ html {
     visibility: hidden;
   }
   nav ul {
-    display:block;
+    display:inline-flexbox;
   } 
 
   nav :hover {
@@ -102,14 +102,7 @@ html {
   flex-direction: row;
   color: #590242;
 }
-/*
-dl {
-  font-size: 1em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  display: flex;
-  color: #590242;
-  
-}*/
+
 dt,dd{
   padding-right: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -131,18 +124,17 @@ dt,dd{
     float: left;
     display: flex;
     flex-direction: column;
-    /*flex-wrap: wrap;*/
     overflow: scroll;
     overflow-y: hidden;
-    padding: 0px;
-    margin: 0px 0px;
+  grid-template-columns: max-content 3fr;
   }
-  #playlists h2 {
+  playlists h2 {
     color: #590242;
     background-color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
   }
-  #playlists img {
+  .playlists img {
     z-index: 1;
     float: left;
     display: flex;
@@ -161,19 +153,18 @@ dt,dd{
     float: right;
     display:flex;
     flex-direction: column;
-    /*flex-wrap: wrap;*/
-    padding: 0px;
-    margin: 0px 0;
     overflow: scroll;
     overflow-y: hidden;
+    grid-template-columns: max-content 3fr;
 }
-#curated h2 {
+curated h2 {
   color: #590242;
   background-color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: auto;
 }
 
- #curated img {
+ .curated img {
   z-index: 1;
   float: left;
   display: flex;
@@ -208,13 +199,15 @@ dt,dd{
  
 
   /*Scroll*/
-  .scroll {
-    /*display: grid;*/
+  .scroll, .scroll1, .scroll2 {
     grid-template-columns: repeat(5, 1fr);
-    /*overflow: scroll;*/
-    overflow-x: auto;
+    overflow: scroll;
     overflow-y: hidden;
+    margin: 10px;
+    position: relative;
   }
+
+  /*
   .scroll section {
     margin: 10px;
     position: relative;
@@ -226,7 +219,8 @@ dt,dd{
     padding: 5px;
     height: 50px;
     width: 350px;
-  }
+    display: grid;
+  }*/
   
  /* #playlists.scroll1 {
     grid-template-columns: repeat(5, 1fr);
@@ -418,14 +412,11 @@ border-radius: 10%;
 /*#playlists {
   background-color: #2699fb;
   color:#ffffff;
-  float: left;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   overflow: scroll;
-  padding: 0px;
-  margin: 0px 0;
-
+  overflow-x: hidden;
+  scroll-margin-left: 0;
 }
 
 #playlists img {
@@ -445,13 +436,11 @@ z-index: 1;
   background-color: #2104d9;
   color:#ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  float: right;
   display:flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  padding: 0px;
-  margin: 0px 0;
   overflow: scroll;
+  oveflow-x: hidden;
+  scroll-margin-left: 0;
 }
 
 #curated img {
