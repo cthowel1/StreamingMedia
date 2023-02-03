@@ -126,7 +126,7 @@ dt,dd{
     flex-direction: column;
     overflow: scroll;
     overflow-y: hidden;
-  grid-template-columns: max-content 3fr;
+    grid-template-columns: auto;
   }
   playlists h2 {
     color: #590242;
@@ -150,12 +150,12 @@ dt,dd{
     background-color: #2104d9;
     color:#ffffff;
     /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
-    float: right;
+    float: left;
     display:flex;
     flex-direction: column;
     overflow: scroll;
     overflow-y: hidden;
-    grid-template-columns: max-content 3fr;
+    grid-template-columns: auto;
 }
 curated h2 {
   color: #590242;
