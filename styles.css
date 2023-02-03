@@ -16,7 +16,7 @@ html {
    /* max-width: 800px;*/
   }
   /*done*/
-  .smooth +p{
+  .smooth {
     background-image: linear-gradient(to right, #020873 , #020659);
     padding: 20px 20px 15px 15px;
    height: auto;
