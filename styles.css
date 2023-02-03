@@ -9,7 +9,7 @@ html {
 
   /*body*/
   body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
     background-color: #ffffff;
     margin: 0 auto;
     min-width: 375px;
@@ -19,21 +19,26 @@ html {
   .smooth {
     background-image: linear-gradient(to right, #020873 , #020659);
     padding: 20px 20px 15px 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
    height: auto;
    width: auto;
 
   }
   /*header*/
   header {
-    margin:auto;
+    margin:0;
+  }
+  h1 {
+    visibility: hidden;
   }
  
   /*navigation*/
   nav {
     background-color: #030a8c;
     color: #ffffff;
-    text-align: center;
-    position: absolute;
+    text-align:justify;
+    /*position:relative;*/
     margin: 0px;
     padding: 0px;
 
@@ -60,8 +65,12 @@ html {
     position: fixed;
     clear: left;
   }
-
-   /*buttons*/
+/*TEXT*/
+h2 + h3 { 
+  font-size: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+   /*BUTTONS*/
 
 /*Trending playlists */
 #trending {
@@ -70,7 +79,7 @@ html {
     display: flex;
     align-self: center;
     justify-self: center;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     margin: 0px 0;
     flex-direction:row;
     overflow-x: hidden;
@@ -78,6 +87,7 @@ html {
     float: inline-start;  
     grid-template-rows: auto;
 }
+
 
 #trending img {
   float:inline-start;
@@ -124,7 +134,7 @@ dt,dd{
     float: left;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     overflow: scroll;
     overflow-y: hidden;
     padding: 0px;
@@ -149,11 +159,11 @@ z-index: 1;
 #curated {
     background-color: #2104d9;
     color:#ffffff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
     float: right;
     display:flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     padding: 0px;
     margin: 0px 0;
     overflow: scroll;
