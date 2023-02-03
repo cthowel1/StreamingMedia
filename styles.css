@@ -201,7 +201,6 @@ curated h2 {
     grid-template-columns: repeat(5, 1fr);
     overflow: scroll;
     overflow-y: hidden;
-    margin: 10px;
     position: relative;
   }
 
