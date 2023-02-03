@@ -68,12 +68,15 @@ html {
     background-color: #ffffff;
     color: #590242;
     display: flex;
+    align-self: center;
+    justify-self: center;
     flex-wrap: wrap;
     margin: 0px 0;
-    flex-direction: row;
+    flex-direction:row;
     overflow-x: hidden;
     overflow: scroll;
-    float: inline-start; 
+    float: inline-start;  
+    grid-template-rows: auto;
 }
 
 #trending img {
@@ -84,7 +87,7 @@ html {
   display: flex;
   flex-direction: row;
 }
-#trending dl {
+ dl {
   display: flex;
   font-size: 1em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -100,7 +103,7 @@ dl {
   color: #590242;
   
 }*/
-#trending dt,dd{
+dt,dd{
   padding-right: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
