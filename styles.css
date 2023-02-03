@@ -42,7 +42,7 @@ html {
     visibility: hidden;
   }
   nav ul {
-    display:inline;
+    display:inline-block;
   } 
 
   nav :hover {
