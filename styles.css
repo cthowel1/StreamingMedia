@@ -28,6 +28,7 @@ html {
   /*header*/
   header {
     margin:0;
+    background-color: #030a8c;
   }
   h1 {
     visibility: hidden;
@@ -39,15 +40,12 @@ html {
     color: #ffffff;
     text-align:justify;
     /*position:relative;*/
-    margin: 0px;
-    padding: 0px;
-
   } 
   nav h2 {
     visibility: hidden;
   }
   nav ul {
-    display:inline-block;
+    display:block;
   } 
 
   nav :hover {
@@ -66,10 +64,10 @@ html {
     clear: left;
   }
 /*TEXT*/
-h2 + h3 { 
+/*h2 + h3 { 
   font-size: 1em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+}*/
    /*BUTTONS*/
 
 /*Trending playlists */
@@ -80,7 +78,7 @@ h2 + h3 {
     align-self: center;
     justify-self: center;
     /*flex-wrap: wrap;*/
-    margin: 0px 0;
+    margin: 2px ;
     flex-direction:row;
     overflow-x: hidden;
     overflow: scroll;
@@ -101,7 +99,6 @@ h2 + h3 {
   display: flex;
   font-size: 1em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  display: flex;
   flex-direction: row;
   color: #590242;
 }
@@ -140,8 +137,13 @@ dt,dd{
     padding: 0px;
     margin: 0px 0px;
   }
-  
+  #playlists h2 {
+    color: #590242;
+    background-color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
   #playlists img {
+    z-index: 1;
     float: left;
     display: flex;
    flex-direction:column;
@@ -150,10 +152,6 @@ dt,dd{
     
   }
   
-#playlists.div.img {
-background-color: #0D8DFB;
-z-index: 1;
-}
 
 /*Curated Playists*/
 #curated {
@@ -169,9 +167,14 @@ z-index: 1;
     overflow: scroll;
     overflow-y: hidden;
 }
-
+#curated h2 {
+  color: #590242;
+  background-color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
  #curated img {
+  z-index: 1;
   float: left;
   display: flex;
   flex-direction: column;
@@ -179,10 +182,6 @@ z-index: 1;
   overflow: scroll;
  }
  
-  #curated.div.img {
-  background-color: #030a8c;
-  z-index: 1;
-  }
    /*footer*/
   footer {
     text-align: center;
@@ -210,7 +209,7 @@ z-index: 1;
 
   /*Scroll*/
   .scroll {
-    display: grid;
+    /*display: grid;*/
     grid-template-columns: repeat(5, 1fr);
     /*overflow: scroll;*/
     overflow-x: auto;
@@ -229,10 +228,8 @@ z-index: 1;
     width: 350px;
   }
   
-  #playlists.scroll1 {
-    display: grid;
+ /* #playlists.scroll1 {
     grid-template-columns: repeat(5, 1fr);
-    /*overflow:scroll;*/
     overflow-x: auto;
     overflow-y: hidden;
   }
@@ -248,9 +245,7 @@ z-index: 1;
     width: 350px;
   }
   #curated.scroll2 {
-    display: grid;
     grid-template-columns: repeat(5, 1fr);
-    /*overflow:scroll;*/
     overflow-x: auto;
     overflow-y: hidden;
   }
@@ -264,7 +259,7 @@ z-index: 1;
     padding: 5px;
     height: 50px;
     width: 350px;
-  }
+  }*/
   
   /* Scrollbar */
   #trending ::-webkit-scrollbar {
