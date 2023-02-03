@@ -45,7 +45,7 @@ html {
     visibility: hidden;
   }
   nav ul {
-    display:inline-flexbox;
+    display:inline;
   } 
 
   nav :hover {
@@ -59,7 +59,7 @@ html {
   }
 
   .home {
-    float: top;
+    float: none;
     position: fixed;
     clear: left;
   }
@@ -89,7 +89,6 @@ html {
 
 #trending img {
   float:inline-start;
-  size-adjust: auto;
   overflow-y: hidden;
   overflow: scroll;
   display: flex;
@@ -113,7 +112,7 @@ dt,dd{
   position: absolute;
   bottom: 150px;
   left: 5px;
-  display: flexbox;
+  display: flex;
  border-radius: 10%;
   }
 
@@ -126,7 +125,7 @@ dt,dd{
     flex-direction: column;
     overflow: scroll;
     overflow-y: hidden;
-    grid-template-columns: auto;
+    /*grid-template-columns: auto;*/
   }
   playlists h2 {
     color: #590242;
@@ -149,13 +148,12 @@ dt,dd{
 #curated {
     background-color: #2104d9;
     color:#ffffff;
-    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
     float: left;
     display:flex;
     flex-direction: column;
     overflow: scroll;
     overflow-y: hidden;
-    grid-template-columns: auto;
+    /*grid-template-columns: auto;*/
 }
 curated h2 {
   color: #590242;
