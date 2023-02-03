@@ -85,35 +85,31 @@ html {
     float: inline-start;  
     grid-template-rows: auto;
 }
+ dl {
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #590242;
+}
 
-
+dt, dd {
+  padding-right: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+}
+/*
 #trending img {
   float:inline-start;
   overflow-y: hidden;
   overflow: scroll;
   display: flex;
   flex-direction: row;
-}
- dl {
-  display: flex;
-  font-size: 1em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  flex-direction: row;
-  color: #590242;
-}
-
-dt,dd{
-  padding-right: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  display: flex;
-  flex-direction: row;
-}
+}*/
 .audio {
   position: absolute;
   bottom: 150px;
   left: 5px;
-  display: flex;
- border-radius: 10%;
+ /* display: flex;
+ border-radius: 10%;*/
   }
 
 /*Your Playlists */
@@ -133,7 +129,7 @@ dt,dd{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: auto;
   }
-  .playlists img {
+ /* .playlists img {
     z-index: 1;
     float: left;
     display: flex;
@@ -141,7 +137,7 @@ dt,dd{
    overflow-y: hidden;
     overflow: scroll;
     
-  }
+  }*/
   
 
 /*Curated Playists*/
@@ -162,14 +158,14 @@ curated h2 {
   margin: auto;
 }
 
- .curated img {
+/* .curated img {
   z-index: 1;
   float: left;
   display: flex;
   flex-direction: column;
   overflow-y: hidden;
   overflow: scroll;
- }
+ }*/
  
    /*footer*/
   footer {
