@@ -114,4 +114,26 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     label span, input {
         display: none;
     }
+    html {
+        background-color: #020659;
+    }
+    header {
+        background-image: linear-gradient(to right, #2104d9,#030a8c,#020873,);
+    }
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #trending {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    #playlist{
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+    #curated {
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
 }
