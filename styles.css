@@ -69,7 +69,7 @@ ul {
     transition: background-color .2s ease-out;
     width: 18px;
 }
-label span:before, label span:after {
+#dropdown span:before, #dropdown span:after {
     background: #ffffff;
     content: '';
     display: block;
@@ -78,28 +78,28 @@ label span:before, label span:after {
     transition: all .2s ease-out;
     width: 100%;
 }
-label span:before {
+#dropdown span:before {
     top: 5px;
 }
-label span:after {
+#dropdown span:after {
     top: -5px;
 }
-input {
+.checkbox {
     display: none;
 }
 input:checked ~ ul {
     max-height: 500px;
 }
-input:checked ~ label span {
+input:checked ~ #dropdown span {
     background: transparent;
 }
-input:checked ~ label span:before {
+input:checked ~ #dropdown span:before {
     transform: rotate(-45deg);
 }
-input:checked ~ label span:after {
+input:checked ~ #dropdown span:after {
     transform: rotate(45deg);
 }
-input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+input:checked ~ #dropdown:not(.steps) span:before, input:checked ~ #dropdown:not(.steps) span:after {
     top: 0;
 }
 
@@ -111,7 +111,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
-    label span, input {
+    #dropdown span, input {
         display: none;
     }
     html {
@@ -126,9 +126,6 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     nav {
         background-color: #030a8c;
         color:#ffffff
-    }
-    nav ul {
-        display: inline;
     }
     nav :hover{
         background-color: #590242;
