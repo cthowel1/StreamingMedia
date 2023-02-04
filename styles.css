@@ -61,7 +61,7 @@ ul {
     position: relative;
     user-select: none;
 }
-label span {
+#dropdown span {
     background-color: #ffffff;
     display: block;
     height: 2px;
@@ -122,6 +122,16 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     }
     main {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    nav {
+        background-color: #030a8c;
+        color:#ffffff
+    }
+    nav ul {
+        display: inline;
+    }
+    nav :hover{
+        background-color: #590242;
     }
     #trending {
         grid-column-start: 1;
