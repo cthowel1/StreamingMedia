@@ -54,7 +54,7 @@ ul {
     max-height: 0;
     transition: max-height .2s ease-out;
 }
-label {
+#dropdown {
     cursor: pointer;
     display: inline-block;
     padding: 28px 20px;
@@ -118,7 +118,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         background-color: #020659;
     }
     header {
-        background-image: linear-gradient(to right, #2104d9,#030a8c,#020873,);
+        background-image: linear-gradient(to right, #2104d9,#030a8c,#020873,#020659);
     }
     main {
         grid-template-columns: 1fr 1fr 1fr;
