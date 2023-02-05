@@ -90,17 +90,61 @@ input {
 input:checked ~ ul {
     max-height: 500px;
 }
-input:checked ~ #dropdown span {
+input:checked ~ label span {
     background: transparent;
 }
-input:checked ~ #dropdown span:before {
+input:checked ~ label span:before {
     transform: rotate(-45deg);
 }
-input:checked ~ #dropdown span:after {
+input:checked ~ label span:after {
     transform: rotate(45deg);
 }
-input:checked ~ #dropdown:not(.steps) span:before, input:checked ~ #dropdown:not(.steps) span:after {
+input:checked ~ label:not(.steps) span:before, input:checked ~ #dropdown:not(.steps) span:after {
     top: 0;
+}
+html {
+    background-color: #020659;
+}
+header {
+    background-image: linear-gradient(to right, #2104d9,#030a8c,#020873,#020659);
+    padding: 20px 20px 15px 15px;
+}
+main {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+nav ul{
+    background-color: #030a8c;
+    color:#ffffff
+}
+nav:hover{
+    background-color: #590242;
+}
+#trending {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #ffffff;
+    color: #590242;
+}
+dl {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #590242;
+  }
+  
+  dt, dd {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 0px;
+  }
+#playlist{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: #2699fb;
+}
+#curated {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: #2104d9;
 }
 
 @media screen and (min-width:834px) {
