@@ -104,6 +104,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ #dropdown:not(.st
 }
 html {
     background-color: #020659;
+    min-width: 375px;
 }
 header {
     background-image: linear-gradient(to right, #2104d9,#030a8c,#020873,#020659);
