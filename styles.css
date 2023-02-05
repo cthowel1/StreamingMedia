@@ -104,7 +104,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ #dropdown:not(.st
 }
 html {
     background-color: #020659;
-    min-width: 375px;
+    max-width: 375px;
 }
 header {
     background-image: linear-gradient(to right, #2104d9,#030a8c,#020873,#020659);
@@ -176,11 +176,15 @@ dl {
     nav:hover{
         background-color: #590242;
     }
+    nav h2 {
+        visibility: hidden;
+      }
     #trending {
         grid-column-start: 1;
         grid-column-end: 4;
         background-color: #ffffff;
         color: #590242;
+        display: flex;
     }
     dl {
         display: flex;
@@ -197,11 +201,16 @@ dl {
         grid-column-start: 3;
         grid-column-end: 4;
         background-color: #2699fb;
+        color:#ffffff;
+        float: left;
     }
     #curated {
         grid-column-start: 3;
         grid-column-end: 4;
         background-color: #2104d9;
+        color:#ffffff;
+        float: left;
+
     }
      /*Audio */
   audio::-webkit-media-controls-mute-button {
