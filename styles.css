@@ -113,8 +113,8 @@ body {
 header {
     background-image: linear-gradient(to right, #2104d9,#030a8c,#020873,#020659);
     padding: 20px 20px 15px 15px;
-    width: auto;
-    top: 30px;
+    width: 100%;
+    top: 20px;
     position: relative;
 }
 main {
@@ -124,7 +124,7 @@ main {
 nav ul{
     background-color: #030a8c;
     color:#ffffff;
-    width:auto;
+    width:100%;
     top:0;
     position: absolute;
 }
@@ -132,14 +132,12 @@ nav a:hover{
     background-color: #590242;
 }
 #trending {
-    grid-column-start: 3;
-    grid-column-end: 5;
     color: #590242;
     margin: 0 2px;
     float: inline-start;
-    overflow: hidden;
+    overflow-x: hidden;
     overflow: scroll;
-    /*display: flex;*/
+    display: flex;
 }
 dl {
     display: flex;
@@ -156,8 +154,6 @@ dl {
     color:#590242;
 }
 #playlists .yp {
-    grid-row-start: 3;
-    grid-row-end: 5;
     background-color: #0D8Dfb;
     color:#ffffff;
     margin: 2px;
@@ -168,8 +164,6 @@ dl {
     color:#590242;  
 }
 #curated .cp {
-    grid-row-start: 3;
-    grid-row-end: 5;
     background-color:#020659;
     color:#ffffff;
     margin: 2px;
@@ -198,8 +192,8 @@ dl {
     header {
         background-image: linear-gradient(to right, #2104d9,#030a8c,#020873,#020659);
         padding: 20px 20px 15px 15px;
-        width: auto;
-        top: 30px;
+        width: 100%;
+        top: 20px;
         position: relative;
     }
     main {
@@ -209,7 +203,7 @@ dl {
         background-color: #030a8c;
         color:#ffffff;
         margin-right: 5px;
-        width:auto;
+        width:100%;
         top:0;
         position: absolute;
     }
@@ -221,14 +215,12 @@ dl {
         display: none;
       }
     #trending {
-        grid-column-start: 3;
-        grid-column-end: 5;
         color: #590242;
         margin: 0 2px;
         float: inline-start;
-        overflow: hidden;
+        overflow-x: hidden;
         overflow: scroll;
-        /*display: flex;*/
+
 
     }
     dl {
@@ -247,12 +239,10 @@ dl {
         float: left;
     }
     #playlists .yp {
-        grid-row-start: 1;
-        grid-row-end: 5;
         background-color: #0D8Dfb;
         color:#ffffff;
-        margin: 0 0 1px 0;
-        padding: 3px;
+        margin: 2px;
+        padding: 1px;
     }
     #curated {
         background-color: #2104d9;
@@ -261,12 +251,10 @@ dl {
 
     }
     #curated .cp {
-        grid-row-start: 1;
-        grid-row-end: 5;
         background-color:#020659;
         color:#ffffff;
-        margin: 0 0 1px 0;
-        padding: 3px;
+        margin: 2px;
+        padding: 1px;
     }
 
      /*Audio */
