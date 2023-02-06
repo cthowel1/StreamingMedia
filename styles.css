@@ -134,7 +134,8 @@ nav {
     background-color: #030a8c;
     color:#ffffff;
     width: 100%;
-    margin-right: 2px;
+    top: 0;
+    margin-right: 5px;
 }
 nav a:hover{
     background-color: #590242;
@@ -312,7 +313,8 @@ dl {
         background-color: #030a8c;
         color:#ffffff;
         width: 100%;
-        margin-right: 2px;
+        top: 0;
+        margin-right: 5px;
     }
     nav a:hover{
         background-color: #590242;
