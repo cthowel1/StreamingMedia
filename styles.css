@@ -112,14 +112,14 @@ body {
     max-width: 375px;
     min-width: 875px;
 }
-header, footer {
+header, footer,nav {
     width: 100%;
 }
 header {
     background-image: linear-gradient(to right, #2104d9,#030a8c,#020873,#020659);
     padding: 5px 5px 5px 5px;
     width: 100%;
-    top: 20px;
+    top: 30px;
     position: relative;
 }
 main {
@@ -154,7 +154,7 @@ nav h2 {
     float: inline-start;
     align-self: center;
     overflow-y: hidden;
-    grid-template-columns: 1fr 1fr 1fr;
+
 }
 dl {
     display: flex;
@@ -214,7 +214,7 @@ dl {
     grid-auto-flow: row;
 }
 #curated ~ #playlists {
-    grid-auto-rows: auto;
+    grid-auto-rows: row;
 }
   /*Audio */
   audio::-webkit-media-controls-mute-button {
@@ -301,27 +301,24 @@ dl {
         background-image: linear-gradient(to right, #2104d9,#030a8c,#020873,#020659);
         padding: 5px 5px 5px 5px;
         width: auto;
-        top: 20px;
+        top: 30px;
         position: relative;
     }
     main {
         background-color: #ffffff;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
     /*Navigation*/
     nav ul {
         background-color: #030a8c;
         color:#ffffff;
-        width: 100%;
         top: 0;
-        padding: 5px 5px 5px 5px;
     }
     nav a:hover{
         background-color: #590242;
     }
     nav li {
-        margin-right: 5px;
+        text-align: justify;
     }
     nav h2 {
         visibility: hidden;
@@ -336,7 +333,6 @@ dl {
         display: flex;
         float: inline-start;
         align-self: center;
-        grid-template-columns: 1fr 1fr 1fr;
       }
      /*Your Playlists*/
       #playlists {
