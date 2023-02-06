@@ -156,7 +156,7 @@ nav h2 {
     float: inline-start;
     align-self: center;
     overflow-y: hidden;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 dl {
     display: flex;
@@ -329,8 +329,13 @@ dl {
     /*Trending Playlist*/
       #trending {
         grid-column-start: 1;
-        grid-column-end: 3;
+        grid-column-end: 5;
         overflow: hidden;
+        margin: 2px;
+     display: flex;
+    float: inline-start;
+    align-self: center;
+    grid-template-columns: 1fr 1fr 1fr;
       }
      /*Your Playlists*/
       #playlists {
