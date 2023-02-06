@@ -130,6 +130,12 @@ footer {
 }
 
 /*Navigation*/
+nav {
+    background-color: #030a8c;
+    color:#ffffff;
+    width: 100%;
+    margin-right: 2px;
+}
 nav a:hover{
     background-color: #590242;
     color: #ffffff;
@@ -176,7 +182,7 @@ dl {
     background-color: #0D8Dfb;
     color:#ffffff;
     margin: 3px;
-    padding: -4px;
+    padding: 4px;
 }
 
 /*Curated Playlist*/
@@ -194,7 +200,7 @@ dl {
     background-color:#020659;
     color:#ffffff;
     margin: 3px;
-    padding: -4px;
+    padding: 4px;
 }
 /*Playlist Grid*/
 #trending {
@@ -302,7 +308,12 @@ dl {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
     /*Navigation*/
-   
+    nav{
+        background-color: #030a8c;
+        color:#ffffff;
+        width: 100%;
+        margin-right: 2px;
+    }
     nav a:hover{
         background-color: #590242;
     }
@@ -316,10 +327,10 @@ dl {
         grid-column-end: 5;
         overflow: hidden;
         margin: 2px;
-     display: flex;
-    float: inline-start;
-    align-self: center;
-    grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        float: inline-start;
+        align-self: center;
+        grid-template-columns: 1fr 1fr 1fr;
       }
      /*Your Playlists*/
       #playlists {
