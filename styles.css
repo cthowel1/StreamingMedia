@@ -112,6 +112,9 @@ body {
     max-width: 375px;
     min-width: 875px;
 }
+header, footer {
+    width: 100%;
+}
 header {
     background-image: linear-gradient(to right, #2104d9,#030a8c,#020873,#020659);
     padding: 20px 20px 15px 15px;
@@ -122,17 +125,25 @@ header {
 main {
     background-color: #ffffff;
 }
+footer {
+    text-align: center;
+    position: relative;
+    clear: both;
+}
 
 /*Navigation*/
+nav li {
+    list-style: none;
+}
 nav ul{
     background-color: #030a8c;
     color:#ffffff;
-    display: block;
     top:0;
     position: absolute;
 }
 nav a:hover{
     background-color: #590242;
+    color: #ffffff;
 }
 nav h2 {
     visibility: hidden;
@@ -161,7 +172,7 @@ dl {
 #trending h3 {
     color: #590242;
 }
-  /*Your Playlist*/
+  /*Your Playlists*/
 #playlists {
     background-color: #2699fb;
     float: left;
@@ -182,7 +193,7 @@ dl {
 /*Curated Playlist*/
 #curated {
     background-color: #2104d9;
-    float: left;
+    float:none;
 }
 #curated h2 {
     color:#590242
@@ -208,6 +219,11 @@ dl {
   }
   audio::-webkit-media-controls-enclosure {
    background-color: rgba(252, 245, 245, 0.5);
+  }
+  .audio {
+    position: absolute;
+    bottom: 150px;
+    left: 5px;
   }
 
   /* Scrollbar */
@@ -265,6 +281,7 @@ dl {
     #dropdown span, input {
         display: none;
     }
+    /*HTML,Body,Header,Main,Text,Footer*/
     html {
         background-color: #020659;
     }
@@ -281,13 +298,14 @@ dl {
     }
     main {
         background-color: #ffffff;
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
+    /*Navigation*/
     nav ul{
         background-color: #030a8c;
         color:#ffffff;
         margin-right: 5px;
-        display: inline;
         top:0;
         position: absolute;
     }
@@ -298,71 +316,22 @@ dl {
         visibility: hidden;
         display: none;
       }
+    /*Trending Playlist*/
       #trending {
         grid-column-start: 1;
         grid-column-end: 3;
       }
+     /*Your Playlists*/
       #playlists {
         grid-column-start: 1;
         grid-column-end: 3;
       }
+    /*Curated Playlist*/
       #curated {
         grid-column-start: 1;
         grid-column-end: 3;
       }
-      /*
-    #trending {
-        color: #590242;
-        margin: 2px;
-        display: flex;
-        float: inline-start;
-        align-self: center; 
-        overflow-x: hidden;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    dl {
-        display: flex;
-        color: #590242;
-      }
-    
-      dt,dd {
-        display: flex;
-        color:#590242;
-        padding-right: 0px;
-      }
-    #playlists {
-        background-color: #2699fb;
-        flex-direction: column;
-        float: left;
-    }
-    #playlists h2 {
-        color: #590242;
-    }
-    #playlists h3,p {
-        color: #ffffff;
-    }
-    #playlists .yp {
-        background-color: #0D8Dfb;
-        margin: 3px;
-        padding: -4px;
-    }
-    #curated {
-        background-color: #2104d9;
-        flex-direction: column;
-        float: left;
-    }
-    #curated h2 {
-        color: #590242;
-    }
-    #curated h3,p {
-        color: #ffffff;
-    }
-    #curated .cp {
-        background-color:#020659;
-        color:#ffffff;
-        margin: 3px;
-        padding: -4px;
-    }*/
+
 
 
 }
