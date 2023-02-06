@@ -136,6 +136,7 @@ nav li {
 nav {
     background-color: #030a8c;
     color:#ffffff;
+    width: 100%;
     top:0;
     position: absolute;
 }
@@ -315,9 +316,12 @@ dl {
     nav{
         background-color: #030a8c;
         color:#ffffff;
-        margin-right: 5px;
+        width: 100%;
         top:0;
         position: absolute;
+    }
+    nav li {
+        list-style: none;
     }
     nav a:hover{
         background-color: #590242;
