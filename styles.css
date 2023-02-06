@@ -171,7 +171,8 @@ dl {
     }
     nav ul{
         background-color: #030a8c;
-        color:#ffffff
+        color:#ffffff;
+        margin-right: 5px;
     }
     nav:hover{
         background-color: #590242;
