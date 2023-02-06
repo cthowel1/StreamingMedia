@@ -108,6 +108,7 @@ html {
 body {
     margin: 0 auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 375px;
 }
 header {
     background-image: linear-gradient(to right, #2104d9,#030a8c,#020873,#020659);
@@ -123,6 +124,7 @@ main {
 nav ul{
     background-color: #030a8c;
     color:#ffffff;
+    display: block;
     width:100%;
     top:0;
     position: absolute;
@@ -132,22 +134,24 @@ nav a:hover{
 }
 #trending {
     color: #590242;
-    margin: 0 2px;
+    margin: 2px;
     float: inline-start;
-    overflow-x: hidden;
+
 }
 dl {
     display: flex;
     color: #590242;
   }
   
-  dt + dd {
+  dt , dd {
     display: flex;
     color: #590242;
     padding-right: 0px;
   }
 #playlists {
     background-color: #2699fb;
+    flex-direction: row;
+    float: left;
 }
 #playlists h2{
     color: #590242;
@@ -163,6 +167,8 @@ dl {
 }
 #curated {
     background-color: #2104d9;
+    flex-direction: row;
+    float: left;
 }
 #curated h2 {
     color:#590242
@@ -200,7 +206,7 @@ dl {
         background-image: linear-gradient(to right, #2104d9,#030a8c,#020873,#020659);
         padding: 20px 20px 15px 15px;
         width: 100%;
-        top: 10px;
+        top: 20px;
         position: relative;
     }
     main {
@@ -209,6 +215,7 @@ dl {
     nav ul{
         background-color: #030a8c;
         color:#ffffff;
+        display: block;
         margin-right: 5px;
         width:100%;
         top:0;
@@ -223,12 +230,9 @@ dl {
       }
     #trending {
         color: #590242;
-        margin: 0 2px;
+        margin: 2px;
         float: inline-start;
-        overflow-x: hidden;
         
-
-
     }
     dl {
         display: flex;
@@ -242,6 +246,7 @@ dl {
       }
     #playlists {
         background-color: #2699fb;
+        flex-direction: column;
         float: left;
     }
     #playlists h2 {
@@ -257,6 +262,7 @@ dl {
     }
     #curated {
         background-color: #2104d9;
+        flex-direction: column;
         float: left;
     }
     #curated h2 {
