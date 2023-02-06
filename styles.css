@@ -197,11 +197,6 @@ dl {
     padding: 4px;
 }
 /*Playlist Grid*/
-#trending {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    overflow: hidden;
-  }
 #playlists ~ #curated {
     grid-auto-flow: row;
 }
@@ -305,7 +300,7 @@ dl {
         background-color: #030a8c;
         color:#ffffff;
         top: 0;
-        margin: -5px;
+        margin: -10px;
     }
     nav a:hover{
         background-color: #590242;
@@ -319,8 +314,6 @@ dl {
       }
     /*Trending Playlist*/
       #trending {
-        grid-column-start: 1;
-        grid-column-end: 5;
         overflow: hidden;
         margin: 2px;
         display: flex;
