@@ -117,7 +117,7 @@ header, footer {
 }
 header {
     background-image: linear-gradient(to right, #2104d9,#030a8c,#020873,#020659);
-    padding: 20px 20px 15px 15px;
+    padding: 5px 5px 5px 5px;
     width: 100%;
     top: 20px;
     position: relative;
@@ -298,7 +298,7 @@ dl {
     }
     header {
         background-image: linear-gradient(to right, #2104d9,#030a8c,#020873,#020659);
-        padding: 20px 20px 15px 15px;
+        padding: 5px 5px 5px 5px;
         width: auto;
         top: 20px;
         position: relative;
