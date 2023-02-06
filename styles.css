@@ -133,9 +133,6 @@ footer {
 nav li {
     list-style: none;
 }
-nav ul{
-   display: inline;
-}
 nav {
     background-color: #030a8c;
     color:#ffffff;
@@ -315,7 +312,7 @@ dl {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
     /*Navigation*/
-    nav ul{
+    nav{
         background-color: #030a8c;
         color:#ffffff;
         margin-right: 5px;
