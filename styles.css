@@ -130,14 +130,14 @@ footer {
 }
 
 /*Navigation*/
-nav {
+/*nav ul {
     background-color: #030a8c;
     color:#ffffff;
     width: 100%;
     top: 0;
     padding: 5px 5px 5px 5px;
     margin-right: 5px;
-}
+}*/
 nav a:hover{
     background-color: #590242;
     color: #ffffff;
@@ -310,16 +310,18 @@ dl {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
     /*Navigation*/
-    nav{
+    nav ul {
         background-color: #030a8c;
         color:#ffffff;
         width: 100%;
         top: 0;
         padding: 5px 5px 5px 5px;
-        margin-right: 5px;
     }
     nav a:hover{
         background-color: #590242;
+    }
+    nav li {
+        margin-right: 5px;
     }
     nav h2 {
         visibility: hidden;
