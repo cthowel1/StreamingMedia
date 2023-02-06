@@ -276,7 +276,7 @@ dl {
         position: absolute;
         top: 0;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
     #dropdown span, input {
         display: none;
