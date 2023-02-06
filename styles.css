@@ -116,7 +116,6 @@ header {
 }
 main {
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: #ffffff;
 }
 
 nav ul{
@@ -146,7 +145,7 @@ dl {
     background-color: #2699fb;
     color:#ffffff
 }
-#playlists a {
+#playlists .yp {
     grid-row-start: 1;
     grid-row-end: 5;
     background-color: #0D8Dfb;
@@ -155,7 +154,7 @@ dl {
     background-color: #2104d9;
     color:#ffffff
 }
-#curated a {
+#curated .cp {
     grid-row-start: 1;
     grid-row-end: 5;
     background-color:#020659;
