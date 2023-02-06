@@ -127,7 +127,7 @@ main {
 nav ul{
     background-color: #030a8c;
     color:#ffffff;
-    width:100%;
+    display: block;
     top:0;
     position: absolute;
 }
@@ -141,7 +141,6 @@ nav h2 {
 
   /*Trending Playlist*/
 #trending {
-    color: #590242;
     margin: 0px;
     display: flex;
     float: inline-start;
@@ -159,7 +158,9 @@ dl {
     color: #590242;
     padding-right: 0px;
   }
-
+#trending h3 {
+    color: #590242;
+}
   /*Your Playlist*/
 #playlists {
     background-color: #2699fb;
@@ -286,7 +287,7 @@ dl {
         background-color: #030a8c;
         color:#ffffff;
         margin-right: 5px;
-        width:auto;
+        display: inline;
         top:0;
         position: absolute;
     }
