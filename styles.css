@@ -104,7 +104,6 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ #dropdown:not(.st
 }
 html {
     background-color: #020659;
-    max-width: 375px;
 }
 body {
     margin: 0 auto;
@@ -136,38 +135,46 @@ nav a:hover{
     margin: 0 2px;
     float: inline-start;
     overflow-x: hidden;
-    overflow: scroll;
-    display: flex;
 }
 dl {
     display: flex;
     color: #590242;
   }
   
-  dt, dd {
+  dt + dd {
     display: flex;
     color: #590242;
     padding-right: 0px;
   }
-#playlist{
+#playlists {
     background-color: #2699fb;
-    color:#590242;
+}
+#playlists h2{
+    color: #590242;
+}
+#playlists h3 + p {
+    color: #ffffff;
 }
 #playlists .yp {
     background-color: #0D8Dfb;
     color:#ffffff;
-    margin: 2px;
-    padding: 3px;
+    margin: 3px;
+    padding: -1px;
 }
 #curated {
     background-color: #2104d9;
-    color:#590242;  
+}
+#curated h2 {
+    color:#590242
+}
+#curated h3 + p {
+    color: #ffffff;
 }
 #curated .cp {
     background-color:#020659;
     color:#ffffff;
-    margin: 2px;
-    padding: 3px;
+    margin: 3px;
+    padding: -1px;
 }
  
 
@@ -193,7 +200,7 @@ dl {
         background-image: linear-gradient(to right, #2104d9,#030a8c,#020873,#020659);
         padding: 20px 20px 15px 15px;
         width: 100%;
-        top: 20px;
+        top: 10px;
         position: relative;
     }
     main {
@@ -219,7 +226,7 @@ dl {
         margin: 0 2px;
         float: inline-start;
         overflow-x: hidden;
-        overflow: scroll;
+        
 
 
     }
@@ -228,33 +235,41 @@ dl {
         color: #590242;
       }
       
-      dt, dd {
+      dt + dd {
         display: flex;
         color:#590242;
         padding-right: 0px;
       }
-    #playlist{
+    #playlists {
         background-color: #2699fb;
-        color:#590242;
         float: left;
+    }
+    #playlists h2 {
+        color: #590242;
+    }
+    #playlists h3 + p {
+        color: #ffffff;
     }
     #playlists .yp {
         background-color: #0D8Dfb;
-        color:#ffffff;
         margin: 2px;
-        padding: 1px;
+        padding: -3px;
     }
     #curated {
         background-color: #2104d9;
-        color:#590242;
         float: left;
-
+    }
+    #curated h2 {
+        color: #590242;
+    }
+    #curated h3 + p {
+        color: #ffffff;
     }
     #curated .cp {
         background-color:#020659;
         color:#ffffff;
         margin: 2px;
-        padding: 1px;
+        padding: -3px;
     }
 
      /*Audio */
