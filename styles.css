@@ -130,17 +130,6 @@ footer {
 }
 
 /*Navigation*/
-nav li {
-    list-style: none;
-}
-nav {
-    background-color: #030a8c;
-    color:#ffffff;
-    width: 100%;
-    top:0;
-    position: absolute;
-}
-
 nav a:hover{
     background-color: #590242;
     color: #ffffff;
@@ -313,16 +302,7 @@ dl {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
     /*Navigation*/
-    nav{
-        background-color: #030a8c;
-        color:#ffffff;
-        width: 100%;
-        top:0;
-        position: absolute;
-    }
-    nav li {
-        list-style: none;
-    }
+   
     nav a:hover{
         background-color: #590242;
     }
