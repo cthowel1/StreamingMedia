@@ -109,6 +109,7 @@ body {
     margin: 0 auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     max-width: 375px;
+    min-width: 875px;
 }
 header {
     background-image: linear-gradient(to right, #2104d9,#030a8c,#020873,#020659);
@@ -134,10 +135,12 @@ nav a:hover{
 }
 #trending {
     color: #590242;
-    margin: 2px;
+    margin: 0px;
     display: flex;
     float: inline-start;
     align-self: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
 
 }
 dl {
@@ -152,7 +155,6 @@ dl {
   }
 #playlists {
     background-color: #2699fb;
-    flex-direction: row;
     float: left;
 }
 #playlists h2{
@@ -169,7 +171,6 @@ dl {
 }
 #curated {
     background-color: #2104d9;
-    flex-direction: row;
     float: left;
 }
 #curated h2 {
@@ -240,7 +241,7 @@ dl {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
-    label span, input {
+    #dropdown span, input {
         display: none;
     }
     /*html {
@@ -327,51 +328,5 @@ dl {
         padding: -4px;
     }*/
 
-     /*Audio */
- /* audio::-webkit-media-controls-mute-button {
-    background-color: #ffffff;
-    border-radius: 50%;
-  }
-  audio::-webkit-media-controls-play-button {
-  background-color: #ffffff;
-  border-radius: 50%;
-  }
-  audio::-webkit-media-controls-enclosure {
-   background-color: rgba(252, 245, 245, 0.5);
-  }*/
-  /* Scrollbar */
- /* #trending ::-webkit-scrollbar {
-    width: 15px;
-  }
-  #trending ::-webkit-scrollbar-track { 
-    box-shadow: inset 0 0 15px #590242;
-  
-  }
-  #trending ::-webkit-scrollbar-thumb {
-    background: #590242;
-    border-radius: 5px;
-  
-  }
-  #trending ::-webkit-scrollbar-thumb:hover {
-    background: #020659;
-  
-  }
-  #playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
-    width: 15px;
-
-  }
-  #playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
-    box-shadow: inset 0 0 15px #590242;
-  
-  }
-  #playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
-    background: #590242;
-    border-radius: 5px;
-  
-  }
-  #playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
-    background: #020659;
-  
-  }*/
 
 }
