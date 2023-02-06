@@ -127,7 +127,6 @@ main {
 nav ul{
     background-color: #030a8c;
     color:#ffffff;
-    display: block;
     width:100%;
     top:0;
     position: absolute;
@@ -242,7 +241,7 @@ dl {
   }
   #playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
     background: #020659;
-  
+
   }
 
   /*Scroll*/
@@ -286,7 +285,6 @@ dl {
     nav ul{
         background-color: #030a8c;
         color:#ffffff;
-        display: block;
         margin-right: 5px;
         width:auto;
         top:0;
