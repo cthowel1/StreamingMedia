@@ -105,6 +105,8 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ #dropdown:not(.st
 /*HTML,Body,Header,Main,Text,Footer*/
 html {
     background-color: #020659;
+    margin:0;
+    padding: 0;
 }
 body {
     margin: 0 auto;
