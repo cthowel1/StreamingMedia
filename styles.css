@@ -105,8 +105,6 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ #dropdown:not(.st
 /*HTML,Body,Header,Main,Text,Footer*/
 html {
     background-color: #020659;
-    margin:0;
-    padding: 0;
 }
 body {
     margin: 0 auto;
@@ -143,12 +141,8 @@ nav h2 {
 
   /*Trending Playlist*/
 #trending {
-    margin: 2px;
-    display: flex;
     float: inline-start;
     align-self: center;
-    overflow-y: hidden;
-
 }
 dl {
     display: flex;
@@ -302,7 +296,7 @@ dl {
         background-color: #030a8c;
         color:#ffffff;
         top: 0;
-        margin: -10px;
+        margin: 10px;
     }
     nav a:hover{
         background-color: #590242;
@@ -316,9 +310,6 @@ dl {
       }
     /*Trending Playlist*/
       #trending {
-        overflow: hidden;
-        margin: 2px;
-        display: flex;
         float: inline-start;
         align-self: center;
       }
