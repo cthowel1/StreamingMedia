@@ -179,6 +179,7 @@ dl {
     }
     nav h2 {
         visibility: hidden;
+        display: none;
       }
     #trending {
         grid-column-start: 1;
