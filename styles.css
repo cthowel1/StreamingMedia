@@ -250,9 +250,10 @@ dl {
 
   /*Scroll*/
   .scroll, .scroll1, .scroll2 {
-    grid-template-columns: repeat(3, 3fr);
-    overflow: scroll;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     overflow-y: hidden;
+    overflow-x: auto;
     position: relative;
   }
 
