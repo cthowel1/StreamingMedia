@@ -205,13 +205,14 @@ dl {
   audio::-webkit-media-controls-enclosure {
    background-color: rgba(252, 245, 245, 0.5);
   }
-  audio {
+  audio:nth-of-type(1) {
     display: flex;
     position: absolute;
     bottom: 150px;
     left: 5px;
     border-radius: 10%;
   }
+ 
 
   /* Scrollbar */
   #trending ::-webkit-scrollbar {
