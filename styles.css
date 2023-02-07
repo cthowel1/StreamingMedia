@@ -160,7 +160,7 @@ dl {
   /*Your Playlists*/
 #playlists {
     background-color: #2699fb;
-    float: left;
+    float: none;
 }
 #playlists h2{
     color: #590242;
@@ -270,6 +270,19 @@ dl {
     overflow-x: auto;
     position: relative;
   }
+  /*Buttons*/
+  #more-trending, #all-your-playlists, #more-curated {
+    background-color: #590242;
+  font: 1em sans-serif;
+  color:#ffffff;
+  border-radius: 10px;
+  content: 15px;
+  float: none;
+  position: relative;
+}
+.button:hover {
+  background-color: #020659;
+}
 
 
 @media screen and (min-width:834px) {
@@ -332,15 +345,9 @@ dl {
         margin: 5px;
       }
      /*Your Playlists*/
-     /* #playlists {
-        grid-column-start: 1;
-        grid-column-end: 3;
-      }*/
+
     /*Curated Playlist*/
-      /*#curated {
-        grid-column-start: 3;
-        grid-column-end: 5;
-      }*/
+    
 
    /* #playlists ~ #curated {
     grid-auto-flow: row;
