@@ -84,22 +84,22 @@ ul {
 #dropdown span:after {
     top: -5px;
 }
-input {
+.dropdown {
     display: none;
 }
 input:checked ~ ul {
     max-height: 500px;
 }
-input:checked ~ label span {
+input:checked ~ #dropdown span {
     background: transparent;
 }
-input:checked ~ label span:before {
+input:checked ~ #dropdown span:before {
     transform: rotate(-45deg);
 }
-input:checked ~ label span:after {
+input:checked ~ #dropdown span:after {
     transform: rotate(45deg);
 }
-input:checked ~ label:not(.steps) span:before, input:checked ~ #dropdown:not(.steps) span:after {
+input:checked ~ #dropdown:not(.steps) span:before, input:checked ~ #dropdown:not(.steps) span:after {
     top: 0;
 }
 /*HTML,Body,Header,Main,Text,Footer*/
@@ -205,10 +205,12 @@ dl {
   audio::-webkit-media-controls-enclosure {
    background-color: rgba(252, 245, 245, 0.5);
   }
-  .audio {
+  audio {
+    display: flex;
     position: absolute;
     bottom: 150px;
     left: 5px;
+    border-radius: 10%;
   }
 
   /* Scrollbar */
@@ -247,9 +249,23 @@ dl {
   }
 
   /*Scroll*/
-  .scroll, .scroll1, .scroll2 {
+  .scroll {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    overflow-y: hidden;
+    overflow-x: auto;
+    position: relative;
+  }
+  .scroll1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow-y: hidden;
+    overflow-x: auto;
+    position: relative;
+  }
+  .scroll2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     overflow-y: hidden;
     overflow-x: auto;
     position: relative;
