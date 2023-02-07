@@ -141,8 +141,7 @@ nav h2 {
 
   /*Trending Playlist*/
 #trending {
-    float: inline-start;
-    align-self: center;
+    margin: 5px;
 }
 dl {
     display: flex;
@@ -314,8 +313,7 @@ dl {
       }
     /*Trending Playlist*/
       #trending {
-        float: inline-start;
-        align-self: center;
+        margin: 5px;
       }
      /*Your Playlists*/
       #playlists {
