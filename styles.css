@@ -155,6 +155,7 @@ dl {
   }
 #trending h3 {
     color: #590242;
+    margin: 2px;
 }
   /*Your Playlists*/
 #playlists {
@@ -190,10 +191,7 @@ dl {
 }
 /*Playlist Grid*/
 #playlists ~ #curated {
-    grid-auto-flow: row;
-}
-#curated ~ #playlists {
-    grid-auto-rows: row;
+    grid-auto-flow: column;
 }
   /*Audio */
   audio::-webkit-media-controls-mute-button {
@@ -251,7 +249,7 @@ dl {
   /*Scroll*/
   .scroll, .scroll1, .scroll2 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     overflow-y: hidden;
     overflow-x: auto;
     position: relative;
@@ -292,6 +290,7 @@ dl {
         left: 90px;
         font-size: 25px;
         color: #ffffff;
+        visibility: visible;
       }
     
     /*Navigation*/
@@ -317,18 +316,20 @@ dl {
         margin: 5px;
       }
      /*Your Playlists*/
-      #playlists {
+     /* #playlists {
         grid-column-start: 1;
         grid-column-end: 3;
-      }
+      }*/
     /*Curated Playlist*/
-      #curated {
+      /*#curated {
         grid-column-start: 3;
         grid-column-end: 5;
-      }
-#playlists ~ #curated {
-    grid-auto-flow: column;
-}
+      }*/
 
-
+   /* #playlists ~ #curated {
+    grid-auto-flow: row;
+    }
+    #curated ~ #playlists {
+    grid-auto-rows: row;
+    }*/
 }
