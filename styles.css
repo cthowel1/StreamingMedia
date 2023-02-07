@@ -256,14 +256,14 @@ dl {
     overflow-x: auto;
     position: relative;
   }
-  .scroll1 {
+  #playlists .scroll1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     overflow-y: hidden;
     overflow-x: auto;
     position: relative;
   }
-  .scroll2 {
+  #curated .scroll2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     overflow-y: hidden;
