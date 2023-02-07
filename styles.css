@@ -314,7 +314,7 @@ dl {
     main {
         background-color: #ffffff;
     }
-    [href="#home"]{
+    #home {
         bottom: 0px;
         left: 90px;
         font-size: 25px;
