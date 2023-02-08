@@ -115,7 +115,6 @@ body {
     margin: 0 auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     max-width: 375px;
-    min-width: 875px;
 }
 header, footer,nav {
     width: 100%;
@@ -170,8 +169,17 @@ nav h2 {
   }
   /*Trending Playlist*/
 #trending {
-    margin: 5px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    margin: 2px ;
+    flex-direction:row;
+    overflow-x: hidden;
+    overflow: scroll;
+    float: inline-start;  
+    grid-template-rows: auto;
 }
+
 #trending dl {
     display: flex;
     color: #590242;
