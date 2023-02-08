@@ -48,7 +48,10 @@ table {
 }
 
 /*Menu Code for Mobile First Style (minus the bits you know how to do): */
-
+* {
+  margin: 0;
+  padding: 0;
+}
 ul {
     overflow: hidden;
     max-height: 0;
@@ -125,8 +128,23 @@ header {
 main {
     background-color: #ffffff;
 }
+h1 {
+  font-size:1.25em;
+}
+h2, h3 {
+  font-size: 1em;
+}
+p, dl, dd {
+  font-size: 1em;
+}
+footer p {
+  font-size: .75em;
+}
 footer {
     text-align: center;
+    position: relative;
+    clear: both;
+    color: #590242;
 }
 
 /*Navigation*/
@@ -138,17 +156,25 @@ nav h2 {
     visibility: hidden;
     display: none;
   }
-
+  #home {
+    top:90px;
+    left: 90px;
+    font-size: 25px;
+    color: #ffffff;
+    visibility: visible;
+    position: relative;
+    text-transform: capitalize;
+  }
   /*Trending Playlist*/
 #trending {
     margin: 5px;
 }
-dl {
+#trending dl {
     display: flex;
     color: #590242;
   }
   
-  dt,dd {
+  #trending dt,dd {
     display: flex;
     color: #590242;
     padding-right: 0px;
@@ -271,13 +297,25 @@ dl {
     overflow-x: auto;
     position: relative;
   }
+  .scroll section {
+    margin: 10px;
+    position: relative;
+  }
+  .scroll div {
+    position: absolute;
+    top: 251px;
+    background-color:#ebe3e3;
+    padding: 5px;
+    height: 50px;
+    width: 350px;
+    display: grid;
+  }
   /*Buttons*/
   #more-trending, #all-your-playlists, #more-curated {
     background-color: #590242;
   font: 1em sans-serif;
   color:#ffffff;
   border-radius: 10px;
-  content: 15px;
   float: none;
   position: relative;
 }
@@ -316,11 +354,13 @@ dl {
         background-color: #ffffff;
     }
     #home {
-        bottom: 0px;
+        top:90px;
         left: 90px;
         font-size: 25px;
         color: #ffffff;
         visibility: visible;
+        position: relative;
+        text-transform: capitalize;
       }
     
     /*Navigation*/
