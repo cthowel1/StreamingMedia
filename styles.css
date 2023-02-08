@@ -115,6 +115,7 @@ body {
     margin: 0 auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     max-width: 375px;
+    min-width: 875px;
 }
 header, footer,nav {
     width: 100%;
@@ -175,11 +176,15 @@ nav h2 {
     margin: 2px ;
     flex-direction:row;
     overflow-x: hidden;
-    overflow: scroll;
     float: inline-start;  
     grid-template-rows: auto;
 }
-
+#trending img {
+  float:inline-start;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+}
 #trending dl {
     display: flex;
     color: #590242;
@@ -209,7 +214,14 @@ nav h2 {
     background-color: #0D8Dfb;
     color:#ffffff;
 }
-
+#playlists .yp img {
+  z-index: 1;
+  float: left;
+  display: flex;
+ flex-direction:column;
+ overflow-y: hidden;
+  overflow: hidden;
+}
 /*Curated Playlist*/
 #curated {
     background-color: #2104d9;
@@ -224,7 +236,14 @@ nav h2 {
 #curated .cp {
     background-color:#020659;
     color:#ffffff;
-
+}
+ #curate .cp img {
+      z-index: 1;
+      float: left;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+      overflow: hidden;
 }
 /*Playlist Grid*/
 #playlists ~ #curated {
@@ -287,32 +306,18 @@ nav h2 {
   }
 
   /*Scroll*/
-  .scroll {
-    display: grid;
+  .scroll, .scroll1, .scroll2 {
     grid-template-columns: repeat(5, 1fr);
+    overflow: scroll;
     overflow-y: hidden;
-    overflow-x: auto;
     position: relative;
   }
-  #playlists .scroll1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    overflow-y: hidden;
-    overflow-x: auto;
-    position: relative;
-  }
-  #curated .scroll2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    overflow-y: hidden;
-    overflow-x: auto;
-    position: relative;
-  }
-  .scroll section {
+
+  .scroll,.scroll1, .scroll2 section {
     margin: 10px;
     position: relative;
   }
-  .scroll div {
+  .scroll, .scroll1, .scroll2 div {
     position: absolute;
     top: 251px;
     background-color:#ebe3e3;
@@ -323,7 +328,7 @@ nav h2 {
   }
   /*Buttons*/
   #more-trending, #all-your-playlists, #more-curated {
-    background-color: #590242;
+ background-color: #590242;
   font: 1em sans-serif;
   color:#ffffff;
   border-radius: 10px;
@@ -365,7 +370,7 @@ nav h2 {
         background-color: #ffffff;
     }
     #home {
-        top:90px;
+        top:-90px;
         left: 90px;
         font-size: 25px;
         color: #ffffff;
@@ -393,9 +398,7 @@ nav h2 {
         display: none;
       }
     /*Trending Playlist*/
-      #trending {
-        margin: 5px;
-      }
+     
      /*Your Playlists*/
 
     /*Curated Playlist*/
