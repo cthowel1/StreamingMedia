@@ -160,6 +160,7 @@ footer {
 /*Navigation
 --------------------------------------*/
 nav {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #2104d9;
@@ -193,10 +194,12 @@ nav h2 {
   --------------------------------*/
 .trend {
   display: flex;
+  margin-top: auto;
   align-self: center;
   justify-content: space-between;
   float: inline-start;
   overflow: hidden;
+  overflow: scroll;
 }
 
 .trend img {
@@ -228,7 +231,7 @@ nav h2 {
   -------------------------------------*/
   #playlists {
     background-color: #2699fb;
-    width: max-content;
+    width:auto;
     grid-column-start:auto;
   }
   #playlists h2{
@@ -257,7 +260,7 @@ nav h2 {
 -----------------------------------------------------------------*/
 #curated  {
   background-color: #2104d9;
-  width: max-content;
+  width: auto;
   grid-column-start:auto;
 }
 
@@ -421,6 +424,7 @@ nav h2 {
     /*Navigation
     -----------------------------------------------------*/
 nav  {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #2104d9;
