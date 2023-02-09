@@ -199,7 +199,6 @@ nav h2 {
   justify-content: space-between;
   float: inline-start;
   overflow: hidden;
-  overflow: scroll;
 }
 
 .trend img {
@@ -250,7 +249,6 @@ nav h2 {
   float: left;
       flex-direction: column;
       overflow-x: hidden;
-      overflow-y: scroll;
       overflow: hidden;
       height: 350px;
       width: 50px;
@@ -280,7 +278,6 @@ nav h2 {
   float: left;
       flex-direction: column;
       overflow-x: hidden;
-      overflow-x: scroll;
       overflow: hidden;
       height: 350px;
       width: 50px;
@@ -351,7 +348,7 @@ nav h2 {
 
   /*Scroll
   ------------------------------------*/
-  .scroll {
+  .scroll .scroll1 .scroll2 {
     grid-template-columns: repeat(5, 1fr);
     overflow: scroll;
     overflow-y: hidden;
@@ -362,6 +359,23 @@ nav h2 {
     position: relative;
   }
   .scroll div {
+    position: absolute;
+    top: 250px;
+    background-color:#ebe3e3;
+    padding: 5px;
+    height: 50px;
+    width: 350px;
+  }
+ 
+  .scroll1 div {
+    position: absolute;
+    top: 250px;
+    background-color:#ebe3e3;
+    padding: 5px;
+    height: 50px;
+    width: 350px;
+  }
+  .scroll2 div {
     position: absolute;
     top: 250px;
     background-color:#ebe3e3;
