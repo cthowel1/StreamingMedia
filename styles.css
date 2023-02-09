@@ -290,7 +290,7 @@ nav h2 {
   }*/
   /*Buttons
   ------------------------------------*/
-  #more-trending, #all-your-playlists, #more-curated {
+  #btn1, #btn2, #btn3 {
  background-color: #590242;
  font: 1em sans-serif;
  color:#ffffff;
@@ -298,7 +298,7 @@ nav h2 {
  float: none;
  position: relative;
 }
-.button a:hover {
+.button #btn1, #btn2, #btn3:hover {
   background-color: #020659;
 }
 
