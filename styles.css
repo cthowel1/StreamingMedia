@@ -241,16 +241,44 @@ nav h2 {
   color:#ffffff;
   float: none;
   justify-content: space-between;
+  justify-content: space-around;
+  display: flex;
+  float: left;
+      flex-direction: column;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      overflow: hidden;
+      height: 350px;
+      width: 50px;
   }
 
 /*Curated Playlist
 -----------------------------------------------------------------*/
-.cp {
+#curated  {
   background-color: #2104d9;
-  float:none;
-  justify-content: space-between;
 }
 
+#curated h2 {
+  color:#590242;
+}
+#curated h3,p {
+  color: #ffffff;
+}
+.cp {
+  background-color:#020659;
+  color:#ffffff;
+  float:none;
+  justify-content: space-between; 
+  justify-content: space-around;
+  display: flex;
+  float: left;
+      flex-direction: column;
+      overflow-x: hidden;
+      overflow-x: scroll;
+      overflow: hidden;
+      height: 350px;
+      width: 50px;
+}
 /*Playlist Grid
 ---------------------------------------------------------------*/
 /*#playlists ~ #curated {
