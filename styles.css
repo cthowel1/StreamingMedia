@@ -126,7 +126,7 @@ header {
     background-image: linear-gradient(to right, #2104d9,#030a8c,#020873,#020659);
     padding: 2px 2px 2px 2px;
     top: 30px;
-   /* position: relative;*/
+  /* position: relative;*/
 }
 header p {
   color:#ffffff
@@ -183,7 +183,7 @@ nav h2 {
     display: none;
   }
 .muzamaker {
-    font-size: 15px;
+    font-size: 4em;
     text-transform: capitalize;
     color: #ffffff;
     margin: .5px;
