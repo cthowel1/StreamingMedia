@@ -198,8 +198,33 @@ nav h2 {
   justify-content: space-between;
   float: inline-start;
   overflow: hidden;
- 
+
 }
+
+.trend img {
+  float:inline-start;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+}
+.trend dl {
+    display: flex;
+    color: #590242;
+  }
+  
+  .trend dt,dd {
+    display: flex;
+    color: #590242;
+    padding-right: 0px;
+  }
+.tren h3 {
+    color: #590242;
+    margin: 2px;
+}
+#trending h2 {
+  color:#590242
+}
+
   /*Your Playlists
   -------------------------------------*/
 
