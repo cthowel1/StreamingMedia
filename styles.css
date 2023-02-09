@@ -186,6 +186,7 @@ nav h2 {
     text-transform: capitalize;
     color: #ffffff;
     margin: .5px;
+    display: block;
   }
   /*Trending Playlist*/
 /*#trending {
@@ -394,7 +395,6 @@ nav h2 {
     text-transform: capitalize;
     color: #ffffff;
     margin: .5px;
-     visibility: visible;
     }
     
     /*Navigation*/
