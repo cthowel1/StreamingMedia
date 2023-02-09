@@ -196,7 +196,18 @@ nav h2 {
   }
   /*Trending Playlist
   --------------------------------*/
+#trending {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  flex-direction: row;
+  float: inline-start;
+  overflow: hidden;
+  overflow-y: scroll;
+  height: auto;
+  width: 375px;
 
+}
   /*Your Playlists
   -------------------------------------*/
 
@@ -290,7 +301,7 @@ nav h2 {
   }*/
   /*Buttons
   ------------------------------------*/
-  #btn1, #btn2, #btn3 {
+.button, .button1, .button2 {
  background-color: #590242;
  font: 1em sans-serif;
  color:#ffffff;
@@ -298,7 +309,7 @@ nav h2 {
  float: none;
  position: relative;
 }
-.button :hover {
+.button, .button1, .button2 :hover {
   background-color: #020659;
 }
 
@@ -342,10 +353,6 @@ nav h2 {
     
     /*Navigation
     -----------------------------------------------------*/
-nav {
-  margin: 0;
-  padding: 0;
-}
 nav ul {
   display:flex;
   justify-content: space-between;
