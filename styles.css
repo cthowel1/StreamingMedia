@@ -227,11 +227,22 @@ nav h2 {
 
   /*Your Playlists
   -------------------------------------*/
-  .yp {
+  #playlists {
     background-color: #2699fb;
-    float: none;
-    justify-content: space-between;
   }
+  #playlists h2{
+    color: #590242;
+}
+  #playlists h3,p {
+  color: #ffffff;
+}
+.yp {
+  background-color: #0D8Dfb;
+  color:#ffffff;
+  float: none;
+  justify-content: space-between;
+  }
+
 /*Curated Playlist
 -----------------------------------------------------------------*/
 .cp {
