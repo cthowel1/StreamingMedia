@@ -417,6 +417,9 @@ nav li a {
   padding: 1px;
   display: block;
 }
+nav li #home {
+  visibility: visible;
+}
 nav a:hover{
     background-color: #590242;
     color: #ffffff;
