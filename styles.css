@@ -159,10 +159,6 @@ footer {
 
 /*Navigation
 --------------------------------------*/
-nav {
-  margin: 0;
-  padding: 0;
-}
 nav ul {
   display:flex;
   justify-content: space-between;
@@ -200,10 +196,9 @@ nav h2 {
   display: flex;
   align-self: center;
   justify-content: space-between;
-  flex-direction: row;
   float: inline-start;
   overflow: hidden;
-  overflow-y: scroll;
+  overflow-x: scroll;
   height: auto;
   width: 375px;
 
