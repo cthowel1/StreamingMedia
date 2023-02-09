@@ -127,6 +127,9 @@ header {
     top: 30px;
     position: relative;
 }
+header p {
+  color:#ffffff
+}
 main {
     background-color: #ffffff;
 }
@@ -140,7 +143,6 @@ h2, h3 {
 }
 p, dl, dd {
   font-size: 1em;
-  color:#ffffff
 }
 footer p {
   font-size: .75em;
