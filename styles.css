@@ -125,7 +125,6 @@ header, footer,nav {
 header {
     background-image: linear-gradient(to right, #2104d9,#030a8c,#020873,#020659);
     padding: 2px 2px 2px 2px;
-    width: 100%;
     top: 30px;
    /* position: relative;*/
 }
@@ -198,15 +197,12 @@ nav h2 {
   align-self: center;
   justify-content: space-between;
   float: inline-start;
-  overflow: hidden;
 }
 
 .trend img {
   float:inline-start;
-  overflow-y: hidden;
   display: flex;
   flex-direction: row;
-  overflow:scroll;
 }
 .trend dl {
     display: flex;
@@ -334,7 +330,7 @@ nav h2 {
 
   /*Scroll
   ------------------------------------*/
- /* .scroll .scroll1 .scroll2 {
+  .scroll  {
     grid-template-columns: repeat(5, 1fr);
     overflow: scroll;
     overflow-y: hidden;
@@ -352,7 +348,7 @@ nav h2 {
     height: 50px;
     width: 350px;
   }
- 
+ /*
   .scroll1 div {
     position: absolute;
     top: 250px;
@@ -371,7 +367,7 @@ nav h2 {
   }*/
   /*Buttons
   ------------------------------------*/
-.button .button1 .button2 {
+.button {
  background-color: #590242;
  font: 1em sans-serif;
  color:#ffffff;
@@ -379,10 +375,31 @@ nav h2 {
  float: none;
  position: relative;
 }
-.button .button1 .button2:hover {
+.button:hover {
   background-color: #020659;
 }
-
+.button1 {
+  background-color: #590242;
+  font: 1em sans-serif;
+  color:#ffffff;
+  border-radius: 10px;
+  float: none;
+  position: relative;
+ }
+ .button1:hover {
+   background-color: #020659;
+ }
+ .button2 {
+  background-color: #590242;
+  font: 1em sans-serif;
+  color:#ffffff;
+  border-radius: 10px;
+  float: none;
+  position: relative;
+ }
+ .button2:hover {
+   background-color: #020659;
+ }
 
 @media screen and (min-width:834px) {
     ul {
