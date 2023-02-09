@@ -303,7 +303,7 @@ nav h2 {
  float: none;
  position: relative;
 }
-.button, .button1, .button2 :hover {
+.button, .button1, .button2 a:hover {
   background-color: #020659;
 }
 
