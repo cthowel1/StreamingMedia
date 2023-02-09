@@ -124,10 +124,10 @@ header, footer,nav {
 }
 header {
     background-image: linear-gradient(to right, #2104d9,#030a8c,#020873,#020659);
-    padding: 5px 5px 5px 5px;
+    padding: 2px 2px 2px 2px;
     width: 100%;
     top: 30px;
-    position: relative;
+   /* position: relative;*/
 }
 header p {
   color:#ffffff
@@ -160,7 +160,6 @@ footer {
 /*Navigation
 --------------------------------------*/
 nav {
-  display:flex;
   justify-content: space-between;
   align-items: center;
   background-color: #2104d9;
@@ -184,7 +183,7 @@ nav h2 {
     display: none;
   }
 .muzamaker {
-    font-size: 25px;
+    font-size: 15px;
     text-transform: capitalize;
     color: #ffffff;
     margin: .5px;
@@ -229,6 +228,8 @@ nav h2 {
   -------------------------------------*/
   #playlists {
     background-color: #2699fb;
+    width: max-content;
+    grid-column-start:auto;
   }
   #playlists h2{
     color: #590242;
@@ -256,6 +257,8 @@ nav h2 {
 -----------------------------------------------------------------*/
 #curated  {
   background-color: #2104d9;
+  width: max-content;
+  grid-column-start:auto;
 }
 
 #curated h2 {
@@ -365,7 +368,7 @@ nav h2 {
   }*/
   /*Buttons
   ------------------------------------*/
-.button, .button1, .button2 {
+.button .button1 .button2 {
  background-color: #590242;
  font: 1em sans-serif;
  color:#ffffff;
@@ -373,7 +376,7 @@ nav h2 {
  float: none;
  position: relative;
 }
-.button, .button1, .button2 a:hover {
+.button .button1 .button2 a:hover {
   background-color: #020659;
 }
 
@@ -403,7 +406,7 @@ nav h2 {
         padding: 5px 5px 5px 5px;
         width: auto;
         top: 30px;
-        position: relative;
+      /*  position: relative;*/
     }
     main {
         background-color: #ffffff;
@@ -418,7 +421,6 @@ nav h2 {
     /*Navigation
     -----------------------------------------------------*/
 nav ul {
-  display:flex;
   justify-content: space-between;
   align-items: center;
   background-color: #2104d9;
