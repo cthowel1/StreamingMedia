@@ -244,14 +244,7 @@ nav h2 {
   color:#ffffff;
   float: none;
   justify-content: space-between;
-  justify-content: space-around;
-  display: flex;
-  float: left;
-      flex-direction: column;
-      overflow-x: hidden;
-      overflow: hidden;
-      height: 350px;
-      width: 50px;
+
   }
 
 /*Curated Playlist
@@ -273,14 +266,7 @@ nav h2 {
   color:#ffffff;
   float:none;
   justify-content: space-between; 
-  justify-content: space-around;
-  display: flex;
-  float: left;
-      flex-direction: column;
-      overflow-x: hidden;
-      overflow: hidden;
-      height: 350px;
-      width: 50px;
+
 }
 /*Playlist Grid
 ---------------------------------------------------------------*/
