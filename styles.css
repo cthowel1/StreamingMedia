@@ -199,9 +199,8 @@ nav h2 {
   float: inline-start;
   overflow: hidden;
   overflow-x: scroll;
-  height: auto;
+  height: 25%;
   width: 375px;
-
 }
   /*Your Playlists
   -------------------------------------*/
