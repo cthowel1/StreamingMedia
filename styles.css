@@ -298,7 +298,7 @@ nav h2 {
 
   /* Scrollbar
   -------------------------------- */
- #trending ::-webkit-scrollbar {
+ /*#trending ::-webkit-scrollbar {
     width: 15px;
   }
   #trending ::-webkit-scrollbar-track { 
@@ -330,11 +330,11 @@ nav h2 {
   #playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
     background: #020659;
 
-  }
+  }*/
 
   /*Scroll
   ------------------------------------*/
-  .scroll .scroll1 .scroll2 {
+ /* .scroll .scroll1 .scroll2 {
     grid-template-columns: repeat(5, 1fr);
     overflow: scroll;
     overflow-y: hidden;
@@ -368,7 +368,7 @@ nav h2 {
     padding: 5px;
     height: 50px;
     width: 350px;
-  }
+  }*/
   /*Buttons
   ------------------------------------*/
 .button .button1 .button2 {
