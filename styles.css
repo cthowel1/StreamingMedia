@@ -192,7 +192,7 @@ nav h2 {
   }
   /*Trending Playlist
   --------------------------------*/
-.trending {
+.trend {
   display: flex;
   align-self: center;
   justify-content: space-between;
