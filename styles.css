@@ -151,6 +151,27 @@ footer {
 }
 
 /*Navigation*/
+nav {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2104d9;
+  color: #ffffff;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  display:flex;
+}
+nav li {
+  list-style: none;
+}
+nav li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1px;
+  display: block;
+}
 nav a:hover{
     background-color: #590242;
     color: #ffffff;
@@ -159,17 +180,14 @@ nav h2 {
     visibility: hidden;
     display: none;
   }
-  #home {
-    top:90px;
-    left: 90px;
+  .muzamaker {
     font-size: 25px;
-    color: #ffffff;
-    visibility: visible;
-    position: relative;
     text-transform: capitalize;
+    color: #ffffff;
+    margin: .5px;
   }
   /*Trending Playlist*/
-#trending {
+/*#trending {
     display: flex;
     align-self: center;
     justify-self: center;
@@ -198,9 +216,10 @@ nav h2 {
 #trending h3 {
     color: #590242;
     margin: 2px;
-}
+}*/
+
   /*Your Playlists*/
-#playlists {
+/*#playlists {
     background-color: #2699fb;
     float: none;
 }
@@ -214,16 +233,17 @@ nav h2 {
     background-color: #0D8Dfb;
     color:#ffffff;
 }
-#playlists .yp img {
+.imgyp {
   float: left;
   display: flex;
  flex-direction:column;
  overflow-y: hidden;
  overflow-x: scroll;
   overflow: hidden;
-}
+}*/
+
 /*Curated Playlist*/
-#curated {
+/*#curated {
     background-color: #2104d9;
     float:none;
 }
@@ -237,20 +257,21 @@ nav h2 {
     background-color:#020659;
     color:#ffffff;
 }
- #curate .cp img {
+  .imgcp {
       float: left;
       display: flex;
       flex-direction: column;
       overflow-x: hidden;
       overflow-x: scroll;
       overflow: hidden;
-}
+}*/
+
 /*Playlist Grid*/
-#playlists ~ #curated {
+/*#playlists ~ #curated {
     grid-auto-flow: column;
-}
+}*/
   /*Audio */
-  audio::-webkit-media-controls-mute-button {
+ /* audio::-webkit-media-controls-mute-button {
     background-color: #ffffff;
     border-radius: 50%;
   }
@@ -261,17 +282,17 @@ nav h2 {
   audio::-webkit-media-controls-enclosure {
    background-color: rgba(252, 245, 245, 0.5);
   }
-  audio:nth-of-type(1) {
+  #trending audio {
     display: flex;
     position: absolute;
     bottom: 150px;
     left: 5px;
     border-radius: 10%;
-  }
+  }*/
  
 
   /* Scrollbar */
-  #trending ::-webkit-scrollbar {
+ /* #trending ::-webkit-scrollbar {
     width: 15px;
   }
   #trending ::-webkit-scrollbar-track { 
@@ -303,10 +324,10 @@ nav h2 {
   #playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
     background: #020659;
 
-  }
+  }*/
 
   /*Scroll*/
-  .scroll {
+ /* .scroll {
     grid-template-columns: repeat(5, 1fr);
     overflow: scroll;
     overflow-y: hidden;
@@ -323,7 +344,7 @@ nav h2 {
     padding: 5px;
     height: 50px;
     width: 350px;
-  }
+  }*/
   /*Buttons*/
   #more-trending, #all-your-playlists, #more-curated {
  background-color: #590242;
@@ -367,30 +388,39 @@ nav h2 {
     main {
         background-color: #ffffff;
     }
-    #home {
-        top:-90px;
-        left: 90px;
-        font-size: 25px;
-        color: #ffffff;
-        visibility: visible;
-        position: relative;
-        text-transform: capitalize;
-      }
+    .muzamaker {
+    font-size: 25px;
+    text-transform: capitalize;
+    color: #ffffff;
+    margin: .5px;
+    }
     
     /*Navigation*/
-    nav ul {
-        background-color: #030a8c;
-        color:#ffffff;
-        top: 0;
-        display:grid;
-
-    }
-    nav a:hover{
-        background-color: #590242;
-    }
-    nav li {
-        text-align: justify;
-    }
+   nav {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2104d9;
+  color: #ffffff;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  display:flex;
+}
+nav li {
+  list-style: none;
+}
+nav li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1px;
+  display: block;
+}
+nav a:hover{
+    background-color: #590242;
+    color: #ffffff;
+}
     nav h2 {
         visibility: hidden;
         display: none;
