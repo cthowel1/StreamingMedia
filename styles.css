@@ -298,7 +298,7 @@ nav h2 {
  float: none;
  position: relative;
 }
-.button #btn1, #btn2, #btn3:hover {
+.button :hover {
   background-color: #020659;
 }
 
