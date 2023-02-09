@@ -293,7 +293,7 @@ nav h2 {
 
   /*Audio 
   -------------------------------------------------------------*/
- /* audio::-webkit-media-controls-mute-button {
+  audio::-webkit-media-controls-mute-button {
     background-color: #ffffff;
     border-radius: 50%;
   }
@@ -310,12 +310,12 @@ nav h2 {
     bottom: 150px;
     left: 5px;
     border-radius: 10%;
-  }*/
+  }
  
 
   /* Scrollbar
   -------------------------------- */
- /*#trending ::-webkit-scrollbar {
+ #trending ::-webkit-scrollbar {
     width: 15px;
   }
   #trending ::-webkit-scrollbar-track { 
@@ -347,11 +347,11 @@ nav h2 {
   #playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
     background: #020659;
 
-  }*/
+  }
 
   /*Scroll
   ------------------------------------*/
-  /*.scroll {
+  .scroll {
     grid-template-columns: repeat(5, 1fr);
     overflow: scroll;
     overflow-y: hidden;
@@ -368,7 +368,7 @@ nav h2 {
     padding: 5px;
     height: 50px;
     width: 350px;
-  }*/
+  }
   /*Buttons
   ------------------------------------*/
 .button .button1 .button2 {
@@ -379,7 +379,7 @@ nav h2 {
  float: none;
  position: relative;
 }
-.button .button1 .button2 a:hover {
+.button .button1 .button2:hover {
   background-color: #020659;
 }
 
@@ -429,6 +429,11 @@ nav  {
   align-items: center;
   background-color: #2104d9;
   color: #ffffff;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  display:flex;
 }
 nav li {
   list-style: none;
