@@ -216,7 +216,7 @@ nav h2 {
     color: #590242;
     padding-right: 0px;
   }
-.tren h3 {
+.trend h3 {
     color: #590242;
     margin: 2px;
 }
@@ -420,7 +420,7 @@ nav h2 {
     
     /*Navigation
     -----------------------------------------------------*/
-nav ul {
+nav  {
   justify-content: space-between;
   align-items: center;
   background-color: #2104d9;
