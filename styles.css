@@ -199,11 +199,11 @@ nav h2 {
   float: inline-start;
 }
 
-.trend img {
+/*.trend img {
   float:inline-start;
   display: flex;
   flex-direction: row;
-}
+}*/
 dl {
     display: flex;
     color: #590242;
@@ -429,7 +429,7 @@ dl {
         background-color: #ffffff;
     }
     .muzamaker {
-    font-size: 25px;
+    font-size: 10px;
     text-transform: capitalize;
     color: #ffffff;
     margin: .5px;
