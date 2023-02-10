@@ -126,7 +126,7 @@ header {
     background-image: linear-gradient(to right, #2104d9,#030a8c,#020873,#020659);
     padding: 2px 2px 2px 2px;
     top: 30px;
-  /* position: relative;*/
+   position: relative;
 }
 header p {
   color:#ffffff
@@ -164,6 +164,8 @@ nav {
   align-items: center;
   background-color: #2104d9;
   color: #ffffff;
+  width:100%;
+  height: 30px;
 }
 nav li {
   list-style: none;
@@ -291,7 +293,7 @@ dl {
 
   /* Scrollbar
   -------------------------------- */
- /*#trending ::-webkit-scrollbar {
+ #trending ::-webkit-scrollbar {
     width: 15px;
   }
   #trending ::-webkit-scrollbar-track { 
@@ -323,7 +325,7 @@ dl {
   #playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
     background: #020659;
 
-  }*/
+  }
 
   /*Scroll
   ------------------------------------*/
@@ -346,6 +348,12 @@ dl {
     width: 350px;
   }
  /*
+ .scroll  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
   .scroll1 div {
     position: absolute;
     top: 250px;
@@ -423,7 +431,7 @@ dl {
         padding: 5px 5px 5px 5px;
         width: auto;
         top: 30px;
-      /*  position: relative;*/
+       position: relative;
     }
     main {
         background-color: #ffffff;
@@ -468,13 +476,64 @@ nav h2 {
  }
 /*Trending Playlist
 ---------------------------------------------------------------*/
-     
+.scroll  {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.scroll section {
+  margin: 10px;
+  position: relative;
+}
+.scroll div {
+  position: absolute;
+  top: 251px;
+  background-color:#ebe3e3;
+  padding: 5px;
+  height: 50px;
+  width: 350px;
+}    
  /*Your Playlists
  ---------------------------------------------------------------*/
-
+ .scroll1  {
+ /* display: grid;*/
+  grid-template-columns: repeat(1, 1fr);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.scroll section {
+  margin: 10px;
+  position: relative;
+}
+.scroll div {
+  position: absolute;
+  top: 251px;
+  background-color:#ebe3e3;
+  padding: 5px;
+  height: 100px;
+  width: 350px;
+}
  /*Curated Playlist
  ----------------------------------------------------------------*/
-    
+ .scroll2 {
+  /*display: grid;*/
+  grid-template-columns: repeat(1, 1fr);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.scroll2 section {
+  margin: 10px;
+  position: relative;
+}
+.scroll2 div {
+  position: absolute;
+  top: 251px;
+  background-color:#ebe3e3;
+  padding: 5px;
+  height: 100px;
+  width: 350px;
+}   
 
 
 }
