@@ -154,6 +154,7 @@ footer {
     clear: both;
     color: #590242;
     z-index: 5;
+    margin-bottom: 5px;
 }
 
 /*Navigation
@@ -226,8 +227,8 @@ dl {
   -------------------------------------*/
   #playlists {
     background-color: #2699fb;
-    width:auto;
-    grid-column-start:auto;
+   /* width:auto;
+    grid-column-start:auto;*/
   }
   #playlists h2{
     color: #590242;
@@ -247,8 +248,8 @@ dl {
 -----------------------------------------------------------------*/
 #curated  {
   background-color: #2104d9;
-  width: auto;
-  grid-column-start:auto;
+  /*width: auto;
+  grid-column-start:auto;*/
 }
 
 #curated h2 {
@@ -347,29 +348,43 @@ dl {
     height: 50px;
     width: 350px;
   }
- /*
- .scroll  {
+ 
+ .scroll1  {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     overflow-x: auto;
     overflow-y: hidden;
+  }
+  .scroll1 section {
+    margin: 10px;
+    position: relative;
   }
   .scroll1 div {
     position: absolute;
     top: 250px;
     background-color:#ebe3e3;
     padding: 5px;
-    height: 50px;
+    height: 100px;
     width: 350px;
+  }
+  .scroll2  {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .scroll2 section {
+    margin: 10px;
+    position: relative;
   }
   .scroll2 div {
     position: absolute;
     top: 250px;
     background-color:#ebe3e3;
     padding: 5px;
-    height: 50px;
+    height: 100px;
     width: 350px;
-  }*/
+  }
   /*Buttons
   ------------------------------------*/
 .button {
@@ -492,32 +507,32 @@ nav h2 {
   background-color:#ebe3e3;
   padding: 5px;
   height: 50px;
-  width: 350px;
+  width: 100%;
 }    
  /*Your Playlists
  ---------------------------------------------------------------*/
  .scroll1  {
- /* display: grid;*/
+  display: grid;
   grid-template-columns: repeat(1, 1fr);
   overflow-x: hidden;
   overflow-y: auto;
 }
-.scroll section {
+.scroll1 section {
   margin: 10px;
   position: relative;
 }
-.scroll div {
+.scroll1 div {
   position: absolute;
   top: 251px;
   background-color:#ebe3e3;
   padding: 5px;
-  height: 100px;
-  width: 350px;
+  height: 50px;
+  width: 834px;
 }
  /*Curated Playlist
  ----------------------------------------------------------------*/
  .scroll2 {
-  /*display: grid;*/
+  display: grid;
   grid-template-columns: repeat(1, 1fr);
   overflow-x: hidden;
   overflow-y: auto;
@@ -531,8 +546,8 @@ nav h2 {
   top: 251px;
   background-color:#ebe3e3;
   padding: 5px;
-  height: 100px;
-  width: 350px;
+  height: 50px;
+  width: 834px;
 }   
 
 
