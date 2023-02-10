@@ -186,7 +186,7 @@ nav h2 {
     display: none;
   }
 .muzamaker {
-    font-size: 4em;
+    font-size: 10em;
     text-transform: capitalize;
     color: #ffffff;
     margin: .5px;
@@ -202,11 +202,11 @@ nav h2 {
   float: inline-start;
 }
 
-/*.trend img {
+.trend img {
   float:inline-start;
   display: flex;
   flex-direction: row;
-}*/
+}
 dl {
     display: flex;
     color: #590242;
