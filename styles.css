@@ -190,7 +190,8 @@ nav h2 {
     text-transform: capitalize;
     color: #ffffff;
     margin: .5px;
-    display: block;
+    display: flex;
+    position: relative;
   }
   /*Trending Playlist
   --------------------------------*/
@@ -201,6 +202,8 @@ nav h2 {
   justify-content: space-between;
   float: inline-start;
   flex-wrap: nowrap;
+  height: 400px;
+  width: 350px;
 }
 
 #trending img {
@@ -515,12 +518,12 @@ nav h2 {
   width: 350px;
   float: right;]
 ---------------------------------------------------------------*/
-.scroll  {
+/*.scroll  {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   overflow-x: auto;
   overflow-y: hidden;
-}
+}*/
 .scroll section {
   margin: 10px;
   position: relative;
@@ -540,12 +543,12 @@ nav h2 {
   width: 350px;
   float: right;]
  ---------------------------------------------------------------*/
- .scroll1  {
+/* .scroll1  {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   overflow-x: hidden;
   overflow-y: auto;
-}
+}*/
 .scroll1 section {
   margin: 10px;
   position: relative;
@@ -566,12 +569,12 @@ nav h2 {
   width: 350px;
   float: right;]
  ----------------------------------------------------------------*/
- .scroll2 {
+ /*.scroll2 {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   overflow-x: hidden;
   overflow-y: auto;
-}
+}*/
 .scroll2 section {
   margin: 10px;
   position: relative;
