@@ -194,7 +194,7 @@ nav h2 {
   }
   /*Trending Playlist
   --------------------------------*/
-.trend {
+#trending {
   display: flex;
   margin-top: auto;
   align-self: center;
@@ -202,7 +202,7 @@ nav h2 {
   float: inline-start;
 }
 
-.trend img {
+#trending img {
   float:inline-start;
   display: flex;
   flex-direction: row;
@@ -212,10 +212,10 @@ dl {
     color: #590242;
   }
   
-  dt {
+dt {
     padding-right: 5px;
   }
-.trend h3 {
+#trending h3 {
     color: #590242;
     margin: 2px;
 }
@@ -236,12 +236,18 @@ dl {
   #playlists h3,p {
   color: #ffffff;
 }
+#playlist section {
+grid-template-rows: auto; 
+  display: grid;
+  height: 400px;
+  width: 350px;
+  float: right;
+}
 .yp {
   background-color: #0D8Dfb;
   color:#ffffff;
   float: none;
   justify-content: space-between;
-
   }
 
 /*Curated Playlist
@@ -251,12 +257,18 @@ dl {
   /*width: auto;
   grid-column-start:auto;*/
 }
-
 #curated h2 {
   color:#590242;
 }
 #curated h3,p {
   color: #ffffff;
+}
+#cuarated section {
+  grid-template-rows: auto; 
+  display: grid;
+  height: 400px;
+  width: 350px;
+  float: right;
 }
 .cp {
   background-color:#020659;
@@ -265,6 +277,7 @@ dl {
   justify-content: space-between; 
 
 }
+
 /*Playlist Grid
 ---------------------------------------------------------------*/
 /*#playlists ~ #curated {
@@ -328,8 +341,8 @@ dl {
 
   }
 
-  /*Scroll
-  ------------------------------------*/
+  /*Scroll - Trending Playlist
+  ---------------------------------------*/
   .scroll  {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -348,7 +361,8 @@ dl {
     height: 50px;
     width: 350px;
   }
- 
+ /*Scroll -Your Playlist
+ ----------------------------------------------*/
  .scroll1  {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -367,6 +381,8 @@ dl {
     height: 100px;
     width: 350px;
   }
+   /*Scroll - Curated Playlist
+ ----------------------------------------------*/
   .scroll2  {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -386,7 +402,7 @@ dl {
     width: 350px;
   }
   /*Buttons
-  ------------------------------------*/
+  --------------------------------------*/
 .button {
  background-color: #590242;
  font: 1em sans-serif;
@@ -490,6 +506,11 @@ nav h2 {
   display: none;
  }
 /*Trending Playlist
+[grid-template-rows: auto; 
+  display: grid;
+  height: 400px;
+  width: 350px;
+  float: right;]
 ---------------------------------------------------------------*/
 .scroll  {
   display: grid;
@@ -510,6 +531,11 @@ nav h2 {
   width: 100%;
 }    
  /*Your Playlists
+ [grid-template-rows: auto; 
+  display: grid;
+  height: 400px;
+  width: 350px;
+  float: right;]
  ---------------------------------------------------------------*/
  .scroll1  {
   display: grid;
@@ -530,6 +556,11 @@ nav h2 {
   width: 834px;
 }
  /*Curated Playlist
+ [grid-template-rows: auto; 
+  display: grid;
+  height: 400px;
+  width: 350px;
+  float: right;]
  ----------------------------------------------------------------*/
  .scroll2 {
   display: grid;
