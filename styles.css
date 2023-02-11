@@ -186,7 +186,7 @@ nav h2 {
     display: none;
   }
 .muzamaker {
-    font-size: 10em;
+    font-size: 15px;
     text-transform: capitalize;
     color: #ffffff;
     margin: .5px;
@@ -200,6 +200,7 @@ nav h2 {
   align-self: center;
   justify-content: space-between;
   float: inline-start;
+  flex-wrap: nowrap;
 }
 
 #trending img {
@@ -468,10 +469,12 @@ grid-template-rows: auto;
         background-color: #ffffff;
     }
     .muzamaker {
-    font-size: 10px;
+    font-size: 15px;
     text-transform: capitalize;
     color: #ffffff;
     margin: .5px;
+    display: flex;
+    position: relative;
     }
     
     /*Navigation
@@ -546,6 +549,7 @@ nav h2 {
 .scroll1 section {
   margin: 10px;
   position: relative;
+  flex-direction: column;
 }
 .scroll1 div {
   position: absolute;
@@ -571,6 +575,7 @@ nav h2 {
 .scroll2 section {
   margin: 10px;
   position: relative;
+  flex-direction: column;
 }
 .scroll2 div {
   position: absolute;
