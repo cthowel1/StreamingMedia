@@ -201,6 +201,7 @@ nav h2 {
   align-self: center;
   justify-content: space-between;
   float: inline-start;
+  height: 400px;
 }
 
 #trending img {
