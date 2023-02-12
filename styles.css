@@ -198,11 +198,11 @@ li a.muzamaker {
   }
   /*Trending Playlist
   --------------------------------*/
-/*#trending {
+#trending {
   display: flex;
   margin-top: auto;
   height: 400px;
-}*/
+}
 
 #trending img {
   float:inline-start;
@@ -221,6 +221,7 @@ dt {
   }*/
 #trending h3 {
     color: #590242;
+    display: block;
     margin: 2px;
     bottom: 40px;
     left: 5px;
