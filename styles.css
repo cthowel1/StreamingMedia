@@ -441,6 +441,7 @@ grid-template-rows: auto;
    background-color: #020659;
  }
 
+ 
 @media screen and (min-width:834px) {
     ul {
         overflow: visible;
@@ -454,7 +455,7 @@ grid-template-rows: auto;
     }
     /*HTML,Body,Header,Main,Text,Footer
     --------------------------------------------------------------*/
-    html {
+   /* html {
         background-color: #020659;
     }
     body {
@@ -478,11 +479,11 @@ grid-template-rows: auto;
     margin: .5px;
     display: flex;
     position: relative;
-    }
+    }*/
     
     /*Navigation
     -----------------------------------------------------*/
-nav  {
+/*nav  {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -516,7 +517,7 @@ nav h2 {
   display: grid;
   height: 400px;
   width: 350px;
-  float: right;]
+  float: right;]*/
 ---------------------------------------------------------------*/
 /*.scroll  {
   display: grid;
