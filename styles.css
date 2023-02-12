@@ -220,7 +220,7 @@ dt {
     padding-right: 5px;
   }*/
 #trending h3 {
-    color: #590242;
+    color: #ffffff;
     display: block;
     margin: 2px;
     bottom: 40px;
@@ -249,7 +249,7 @@ dt {
   height: 200px;
   width: 250px;
 }
-#playlists img {
+#playlists a {
  /* background-color: #0D8Dfb;*/
   color:#ffffff;
   float: none;
@@ -275,7 +275,7 @@ dt {
   width: 250px;
 
 }
-#curated img {
+#curated a {
   /*background-color:#020659;*/
   color:#ffffff;
   float:none;
