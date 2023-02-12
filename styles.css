@@ -196,14 +196,11 @@ li a.muzamaker {
   }
   /*Trending Playlist
   --------------------------------*/
-#trending {
+/*#trending {
   display: flex;
   margin-top: auto;
-  align-self: center;
-  justify-content: space-between;
-  float: inline-start;
   height: 400px;
-}
+}*/
 
 #trending img {
   float:inline-start;
@@ -227,6 +224,7 @@ dt {
     margin: 2px;
     bottom: 40px;
     left: 5px;
+    width:auto;
     position: absolute;
 }
 #trending h2 {
@@ -235,11 +233,11 @@ dt {
 
   /*Your Playlists
   -------------------------------------*/
- /* #playlists {
+  #playlists {
     background-color: #2699fb;
     width:auto;
     grid-column-start:auto;
-  }*/
+  }
   #playlists h2{
     color: #590242;
 }
@@ -252,9 +250,10 @@ grid-template-rows: auto;
   height: 400px;
   width: 350px;
   float: right;
+  clear: left;
 }
 #playlists img {
-  background-color: #0D8Dfb;
+ /* background-color: #0D8Dfb;*/
   color:#ffffff;
   float: none;
   justify-content: space-between;
@@ -263,11 +262,11 @@ grid-template-rows: auto;
 
 /*Curated Playlist
 -----------------------------------------------------------------*/
-/*#curated  {
+#curated  {
   background-color: #2104d9;
   width: auto;
   grid-column-start:auto;
-}*/
+}
 #curated h2 {
   color:#590242;
 }
@@ -280,9 +279,10 @@ grid-template-rows: auto;
   height: 400px;
   width: 350px;
   float: right;
+  clear: left;
 }
 #curated img {
-  background-color:#020659;
+  /*background-color:#020659;*/
   color:#ffffff;
   float:none;
   justify-content: space-between; 
@@ -366,7 +366,7 @@ grid-template-rows: auto;
     position: relative;
   }
   .scroll div {
-    position: absolute;
+    /*position: absolute;*/
     top: 251px;
     background-color:#ebe3e3;
     padding: 5px;
@@ -388,7 +388,7 @@ grid-template-rows: auto;
   .scroll1 div {
     position: absolute;
     top: 251px;
-    background-color:#2699fb;
+    background-color:#0D8Dfb;
     padding: 5px;
     height: 100px;
     width: 350px;
@@ -408,7 +408,7 @@ grid-template-rows: auto;
   .scroll2 div {
     position: absolute;
     top: 251px;
-    background-color:#2104d9;
+    background-color:#020659;
     padding: 5px;
     height: 100px;
     width: 350px;
