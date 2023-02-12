@@ -201,9 +201,6 @@ nav h2 {
   align-self: center;
   justify-content: space-between;
   float: inline-start;
-  flex-wrap: nowrap;
-  height: 400px;
-  width: 350px;
 }
 
 #trending img {
@@ -321,7 +318,7 @@ grid-template-rows: auto;
   #trending ::-webkit-scrollbar-thumb {
     background: #590242;
     border-radius: 5px;
-  
+   
   }
   #trending ::-webkit-scrollbar-thumb:hover {
     background: #020659;
@@ -513,13 +510,8 @@ nav h2 {
   display: none;
  }
 /*Trending Playlist
-[grid-template-rows: auto; 
-  display: grid;
-  height: 400px;
-  width: 350px;
-  float: right;]
 ---------------------------------------------------------------*/
-.scroll  {
+/*.scroll  {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   overflow-x: auto;
@@ -550,7 +542,7 @@ nav h2 {
   overflow-x: hidden;
   overflow-y: auto;
 }*/
-.scroll1 section {
+/*.scroll1 section {
   margin: 10px;
   position: relative;
   flex-direction: column;
@@ -564,18 +556,13 @@ nav h2 {
   width: 834px;
 }
  /*Curated Playlist
- [grid-template-rows: auto; 
-  display: grid;
-  height: 400px;
-  width: 350px;
-  float: right;]
  ----------------------------------------------------------------*/
  /*.scroll2 {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   overflow-x: hidden;
   overflow-y: auto;
-}*/
+}
 .scroll2 section {
   margin: 10px;
   position: relative;
@@ -588,7 +575,7 @@ nav h2 {
   padding: 5px;
   height: 50px;
   width: 834px;
-}   
+}  */
 
 
 }
