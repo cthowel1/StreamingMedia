@@ -249,7 +249,7 @@ dt {
   height: 200px;
   width: 250px;
 }
-#playlists a {
+#playlists img {
  /* background-color: #0D8Dfb;*/
   color:#ffffff;
   float: none;
@@ -275,7 +275,7 @@ dt {
   width: 250px;
 
 }
-#curated a {
+#curated img {
   /*background-color:#020659;*/
   color:#ffffff;
   float:none;
